@@ -28,17 +28,17 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        rSButtonMaterialIconTwo1 = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        rSButtonMaterialIconTwo2 = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        rSButtonMaterialIconTwo3 = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        rSButtonMaterialIconTwo4 = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        rSButtonMaterialIconTwo5 = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        lblImagen = new javax.swing.JLabel();
+        lblMenu = new javax.swing.JLabel();
+        btnClientes = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        btnMascotas = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        btnConsulta = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        btnMedicamentos = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        btnUsuarios = new RSMaterialComponent.RSButtonMaterialIconTwo();
+        btnSalir = new RSMaterialComponent.RSButtonMaterialIconTwo();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        lblSalir = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -46,56 +46,62 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/pet150.png"))); // NOI18N
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/pet150.png"))); // NOI18N
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/content.png"))); // NOI18N
-        jLabel1.setText("MENU");
+        lblMenu.setBackground(new java.awt.Color(255, 255, 255));
+        lblMenu.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblMenu.setForeground(new java.awt.Color(255, 255, 255));
+        lblMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/content.png"))); // NOI18N
+        lblMenu.setText("MENU");
 
-        jLabel3.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("xxxxxxxxxxxxxxxxx");
-
-        rSButtonMaterialIconTwo1.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonMaterialIconTwo1.setText("Consulta");
-        rSButtonMaterialIconTwo1.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        rSButtonMaterialIconTwo1.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        rSButtonMaterialIconTwo1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD_BOX);
-
-        rSButtonMaterialIconTwo2.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonMaterialIconTwo2.setText("Clientes");
-        rSButtonMaterialIconTwo2.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        rSButtonMaterialIconTwo2.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        rSButtonMaterialIconTwo2.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
-        rSButtonMaterialIconTwo2.addActionListener(new java.awt.event.ActionListener() {
+        btnClientes.setBackground(new java.awt.Color(255, 102, 0));
+        btnClientes.setText("Clientes");
+        btnClientes.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnClientes.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnClientes.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
+        btnClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButtonMaterialIconTwo2ActionPerformed(evt);
+                btnClientesActionPerformed(evt);
             }
         });
 
-        rSButtonMaterialIconTwo3.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonMaterialIconTwo3.setText("Mascotas");
-        rSButtonMaterialIconTwo3.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        rSButtonMaterialIconTwo3.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        rSButtonMaterialIconTwo3.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PETS);
+        btnMascotas.setBackground(new java.awt.Color(255, 102, 0));
+        btnMascotas.setText("Mascotas");
+        btnMascotas.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnMascotas.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnMascotas.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PETS);
 
-        rSButtonMaterialIconTwo4.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonMaterialIconTwo4.setText("Usuarios");
-        rSButtonMaterialIconTwo4.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        rSButtonMaterialIconTwo4.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        rSButtonMaterialIconTwo4.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE_OUTLINE);
+        btnConsulta.setBackground(new java.awt.Color(255, 102, 0));
+        btnConsulta.setText("Consulta");
+        btnConsulta.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnConsulta.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnConsulta.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD_BOX);
 
-        rSButtonMaterialIconTwo5.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonMaterialIconTwo5.setText("Medicamentos");
-        rSButtonMaterialIconTwo5.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        rSButtonMaterialIconTwo5.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
-        rSButtonMaterialIconTwo5.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.GRAIN);
-        rSButtonMaterialIconTwo5.addActionListener(new java.awt.event.ActionListener() {
+        btnMedicamentos.setBackground(new java.awt.Color(255, 102, 0));
+        btnMedicamentos.setText("Medicamentos");
+        btnMedicamentos.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnMedicamentos.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnMedicamentos.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.GRAIN);
+        btnMedicamentos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButtonMaterialIconTwo5ActionPerformed(evt);
+                btnMedicamentosActionPerformed(evt);
+            }
+        });
+
+        btnUsuarios.setBackground(new java.awt.Color(255, 102, 0));
+        btnUsuarios.setText("Usuarios");
+        btnUsuarios.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnUsuarios.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnUsuarios.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE_OUTLINE);
+
+        btnSalir.setBackground(new java.awt.Color(255, 102, 0));
+        btnSalir.setText("Salir");
+        btnSalir.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnSalir.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnSalir.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.EXIT_TO_APP);
+        btnSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSalirActionPerformed(evt);
             }
         });
 
@@ -103,65 +109,60 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel1)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE))
-                .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(rSButtonMaterialIconTwo4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(rSButtonMaterialIconTwo5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(rSButtonMaterialIconTwo1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(rSButtonMaterialIconTwo3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addComponent(rSButtonMaterialIconTwo2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 3, Short.MAX_VALUE))
+            .addComponent(btnClientes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btnMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btnConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btnMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(7, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(161, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSButtonMaterialIconTwo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(140, Short.MAX_VALUE)
+                .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(5, 5, 5)
-                .addComponent(rSButtonMaterialIconTwo3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSButtonMaterialIconTwo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSButtonMaterialIconTwo5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnMedicamentos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSButtonMaterialIconTwo4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(47, 47, 47))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(368, Short.MAX_VALUE)))
+                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(478, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 460));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 570));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(255, 102, 0));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 30)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 0, 0));
-        jLabel4.setText("X");
-        jLabel4.setToolTipText("Salir");
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+        lblSalir.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblSalir.setForeground(new java.awt.Color(255, 255, 255));
+        lblSalir.setText("X");
+        lblSalir.setToolTipText("Salir");
+        lblSalir.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel4MouseClicked(evt);
+                lblSalirMouseClicked(evt);
             }
         });
 
@@ -170,35 +171,39 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 533, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 655, Short.MAX_VALUE)
+                .addComponent(lblSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 28, Short.MAX_VALUE))
+                .addComponent(lblSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 16, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, -1));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, 560, 470));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, -1, 570));
 
-        setSize(new java.awt.Dimension(748, 454));
+        setSize(new java.awt.Dimension(880, 569));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void rSButtonMaterialIconTwo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMaterialIconTwo2ActionPerformed
+    private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSButtonMaterialIconTwo2ActionPerformed
+    }//GEN-LAST:event_btnClientesActionPerformed
 
-    private void rSButtonMaterialIconTwo5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMaterialIconTwo5ActionPerformed
+    private void btnMedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicamentosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSButtonMaterialIconTwo5ActionPerformed
+    }//GEN-LAST:event_btnMedicamentosActionPerformed
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void lblSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSalirMouseClicked
         System.exit(0);
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }//GEN-LAST:event_lblSalirMouseClicked
+
+    private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_btnSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -236,17 +241,17 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnClientes;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnConsulta;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnMascotas;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnMedicamentos;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnSalir;
+    private RSMaterialComponent.RSButtonMaterialIconTwo btnUsuarios;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private RSMaterialComponent.RSButtonMaterialIconTwo rSButtonMaterialIconTwo1;
-    private RSMaterialComponent.RSButtonMaterialIconTwo rSButtonMaterialIconTwo2;
-    private RSMaterialComponent.RSButtonMaterialIconTwo rSButtonMaterialIconTwo3;
-    private RSMaterialComponent.RSButtonMaterialIconTwo rSButtonMaterialIconTwo4;
-    private RSMaterialComponent.RSButtonMaterialIconTwo rSButtonMaterialIconTwo5;
+    private javax.swing.JLabel lblImagen;
+    private javax.swing.JLabel lblMenu;
+    private javax.swing.JLabel lblSalir;
     // End of variables declaration//GEN-END:variables
 }
