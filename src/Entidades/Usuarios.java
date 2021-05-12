@@ -1,18 +1,17 @@
-
 package Entidades;
 
-
 public class Usuarios {
-     private int codigo;
-    private String nombre, apellido1,apellido2,usuario,clave;
-    
-    public Usuarios (){ }
-    
-    public Usuarios (String usuario, String clave){
-           
-    
-    this.usuario=usuario;
-    this.clave=clave;
+
+    private int codigo;
+    private String nombre, apellido1, apellido2, usuario, clave;
+
+    public Usuarios() {
+    }
+
+    public Usuarios(String usuario, String clave) {
+
+        this.usuario = usuario;
+        this.clave = clave;
     }
 
     public int getCodigo() {
@@ -62,5 +61,5 @@ public class Usuarios {
     public void setClave(String clave) {
         this.clave = clave;
     }
-    
+
 }

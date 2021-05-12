@@ -21,10 +21,14 @@ public class Conexion {
 
     }
 
-
-    public static void main(String[] args) {
-        System.out.println(Conexion.getConexion());
-        System.out.println("Conexion exitosa");
-        System.out.println("Conexion git");
+//    public static void main(String[] args) {
+//        System.out.println(Conexion.getConexion());
+//    }
+    public static void cerrar(Connection con) {
+        try {
+            con.close();
+        } catch (Exception e) {
+            e.printStackTrace(System.out);
+        }
     }
 }
