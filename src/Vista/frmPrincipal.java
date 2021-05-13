@@ -1,20 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Vista;
 
-/**
- *
- * @author yorbarbe
- */
+import java.awt.*;
+import javax.swing.*;
+
 public class frmPrincipal extends javax.swing.JFrame {
 
-    /**
-     * Creates new form frmPrincipal
-     */
+    //fondo nuevoFondo = new fondo();
+
     public frmPrincipal() {
+        //this.setContentPane(nuevoFondo);
+        //this.setIconImage(new ImageIcon(getClass().getResource("/Img/icono.png")).getImage());
         initComponents();
     }
 
@@ -36,12 +31,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnMedicamentos = new RSMaterialComponent.RSButtonMaterialIconTwo();
         btnUsuarios = new RSMaterialComponent.RSButtonMaterialIconTwo();
         btnSalir = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        jpPrincipal = new javax.swing.JPanel();
+        jpUser = new javax.swing.JPanel();
         lblSalir = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
@@ -70,12 +64,22 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnMascotas.setBackgroundHover(new java.awt.Color(255, 153, 0));
         btnMascotas.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnMascotas.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PETS);
+        btnMascotas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMascotasActionPerformed(evt);
+            }
+        });
 
         btnConsulta.setBackground(new java.awt.Color(255, 102, 0));
         btnConsulta.setText("Consulta");
         btnConsulta.setBackgroundHover(new java.awt.Color(255, 153, 0));
         btnConsulta.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnConsulta.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD_BOX);
+        btnConsulta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConsultaActionPerformed(evt);
+            }
+        });
 
         btnMedicamentos.setBackground(new java.awt.Color(255, 102, 0));
         btnMedicamentos.setText("Medicamentos");
@@ -93,6 +97,11 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnUsuarios.setBackgroundHover(new java.awt.Color(255, 153, 0));
         btnUsuarios.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnUsuarios.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE_OUTLINE);
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuariosActionPerformed(evt);
+            }
+        });
 
         btnSalir.setBackground(new java.awt.Color(255, 102, 0));
         btnSalir.setText("Salir");
@@ -127,7 +136,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(270, Short.MAX_VALUE)
+                .addContainerGap(282, Short.MAX_VALUE)
                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -141,7 +150,7 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addComponent(btnUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+                .addGap(35, 35, 35))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
@@ -151,10 +160,22 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 700));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpPrincipal.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel3.setBackground(new java.awt.Color(255, 102, 0));
+        javax.swing.GroupLayout jpPrincipalLayout = new javax.swing.GroupLayout(jpPrincipal);
+        jpPrincipal.setLayout(jpPrincipalLayout);
+        jpPrincipalLayout.setHorizontalGroup(
+            jpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 990, Short.MAX_VALUE)
+        );
+        jpPrincipalLayout.setVerticalGroup(
+            jpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 650, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 990, 650));
+
+        jpUser.setBackground(new java.awt.Color(255, 102, 0));
 
         lblSalir.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         lblSalir.setForeground(new java.awt.Color(255, 255, 255));
@@ -166,35 +187,39 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout jpUserLayout = new javax.swing.GroupLayout(jpUser);
+        jpUser.setLayout(jpUserLayout);
+        jpUserLayout.setHorizontalGroup(
+            jpUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpUserLayout.createSequentialGroup()
                 .addGap(0, 955, Short.MAX_VALUE)
                 .addComponent(lblSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        jpUserLayout.setVerticalGroup(
+            jpUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpUserLayout.createSequentialGroup()
                 .addComponent(lblSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 16, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, -1));
+        getContentPane().add(jpUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, -1, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 990, 700));
-
-        setSize(new java.awt.Dimension(1300, 700));
+        setSize(new java.awt.Dimension(1316, 739));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
-        // TODO add your handling code here:
+        frmClientes fCliente = new frmClientes();
+        jpPrincipal.add(fCliente);
+        fCliente.setVisible(true);
+        fCliente.setLocation((jpPrincipal.getWidth() - fCliente.getWidth()) / 2, (jpPrincipal.getHeight() - fCliente.getHeight()) / 2);
     }//GEN-LAST:event_btnClientesActionPerformed
 
     private void btnMedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicamentosActionPerformed
-        // TODO add your handling code here:
+        frmMedicamentos fMedicamento = new frmMedicamentos();
+        fMedicamento.add(fMedicamento);
+        fMedicamento.setVisible(true);
+        fMedicamento.setLocation((jpPrincipal.getWidth() - fMedicamento.getWidth()) / 2, (jpPrincipal.getHeight() - fMedicamento.getHeight()) / 2);
     }//GEN-LAST:event_btnMedicamentosActionPerformed
 
     private void lblSalirMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblSalirMouseClicked
@@ -204,6 +229,27 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMascotasActionPerformed
+        frmMascotas fMascotas = new frmMascotas();
+        jpPrincipal.add(fMascotas);
+        fMascotas.setVisible(true);
+        fMascotas.setLocation((jpPrincipal.getWidth() - fMascotas.getWidth()) / 2, (jpPrincipal.getHeight() - fMascotas.getHeight()) / 2);
+    }//GEN-LAST:event_btnMascotasActionPerformed
+
+    private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
+        frmConsulta fConsulta = new frmConsulta();
+        jpPrincipal.add(fConsulta);
+        fConsulta.setVisible(true);
+        fConsulta.setLocation((jpPrincipal.getWidth() - fConsulta.getWidth()) / 2, (jpPrincipal.getHeight() - fConsulta.getHeight()) / 2);
+    }//GEN-LAST:event_btnConsultaActionPerformed
+
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
+        frmUsuarios fUsuarios = new frmUsuarios();
+        jpPrincipal.add(fUsuarios);
+        fUsuarios.setVisible(true);
+        fUsuarios.setLocation((jpPrincipal.getWidth() - fUsuarios.getWidth()) / 2, (jpPrincipal.getHeight() - fUsuarios.getHeight()) / 2);
+    }//GEN-LAST:event_btnUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -240,6 +286,20 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
     }
 
+    
+//     public class fondo extends JPanel {
+//
+//        private Image imagen;
+//
+//        public void paint(Graphics g) {
+//            imagen = new ImageIcon(getClass().getResource("/Img/fondo3.jpg")).getImage();
+//            g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
+//            setOpaque(false);
+//            super.paint(g);
+//
+//        }
+//    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private RSMaterialComponent.RSButtonMaterialIconTwo btnClientes;
     private RSMaterialComponent.RSButtonMaterialIconTwo btnConsulta;
@@ -248,8 +308,8 @@ public class frmPrincipal extends javax.swing.JFrame {
     private RSMaterialComponent.RSButtonMaterialIconTwo btnSalir;
     private RSMaterialComponent.RSButtonMaterialIconTwo btnUsuarios;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jpPrincipal;
+    private javax.swing.JPanel jpUser;
     private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblMenu;
     private javax.swing.JLabel lblSalir;
