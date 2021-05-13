@@ -46,10 +46,10 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
 
-        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/pet150.png"))); // NOI18N
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/logo300.png"))); // NOI18N
 
         lblMenu.setBackground(new java.awt.Color(255, 255, 255));
-        lblMenu.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        lblMenu.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         lblMenu.setForeground(new java.awt.Color(255, 255, 255));
         lblMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/content.png"))); // NOI18N
         lblMenu.setText("MENU");
@@ -57,7 +57,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnClientes.setBackground(new java.awt.Color(255, 102, 0));
         btnClientes.setText("Clientes");
         btnClientes.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnClientes.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnClientes.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnClientes.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
         btnClientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,19 +68,19 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnMascotas.setBackground(new java.awt.Color(255, 102, 0));
         btnMascotas.setText("Mascotas");
         btnMascotas.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnMascotas.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnMascotas.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnMascotas.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PETS);
 
         btnConsulta.setBackground(new java.awt.Color(255, 102, 0));
         btnConsulta.setText("Consulta");
         btnConsulta.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnConsulta.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnConsulta.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnConsulta.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD_BOX);
 
         btnMedicamentos.setBackground(new java.awt.Color(255, 102, 0));
         btnMedicamentos.setText("Medicamentos");
         btnMedicamentos.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnMedicamentos.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnMedicamentos.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnMedicamentos.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.GRAIN);
         btnMedicamentos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,13 +91,13 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnUsuarios.setBackground(new java.awt.Color(255, 102, 0));
         btnUsuarios.setText("Usuarios");
         btnUsuarios.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnUsuarios.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnUsuarios.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnUsuarios.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE_OUTLINE);
 
         btnSalir.setBackground(new java.awt.Color(255, 102, 0));
         btnSalir.setText("Salir");
         btnSalir.setBackgroundHover(new java.awt.Color(255, 153, 0));
-        btnSalir.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        btnSalir.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnSalir.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.EXIT_TO_APP);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +111,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 3, Short.MAX_VALUE))
+                .addGap(0, 123, Short.MAX_VALUE))
             .addComponent(btnClientes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addComponent(btnMascotas, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addComponent(btnConsulta, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
@@ -121,13 +121,13 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(7, Short.MAX_VALUE)))
+                    .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
+                    .addContainerGap()))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(140, Short.MAX_VALUE)
+                .addContainerGap(270, Short.MAX_VALUE)
                 .addComponent(lblMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnClientes, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -145,11 +145,11 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(478, Short.MAX_VALUE)))
+                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(458, Short.MAX_VALUE)))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 570));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 700));
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -171,7 +171,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 655, Short.MAX_VALUE)
+                .addGap(0, 955, Short.MAX_VALUE)
                 .addComponent(lblSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -181,11 +181,11 @@ public class frmPrincipal extends javax.swing.JFrame {
                 .addGap(0, 16, Short.MAX_VALUE))
         );
 
-        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, -1));
+        jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, -1));
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 0, -1, 570));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 990, 700));
 
-        setSize(new java.awt.Dimension(880, 569));
+        setSize(new java.awt.Dimension(1300, 700));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
