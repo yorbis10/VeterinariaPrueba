@@ -2,12 +2,14 @@ package Vista;
 
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.ImageIcon;
 
 public class frmPrincipal extends javax.swing.JFrame {
 
     
     public frmPrincipal() {
-      
+       this.setIconImage(new ImageIcon(getClass().getResource("/Recursos/Principal/icon.png")).getImage());
+       
         initComponents();
         //this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
@@ -128,7 +130,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addContainerGap()
-                    .addComponent(lblImagen, javax.swing.GroupLayout.PREFERRED_SIZE, 298, Short.MAX_VALUE)
+                    .addComponent(lblImagen, javax.swing.GroupLayout.DEFAULT_SIZE, 298, Short.MAX_VALUE)
                     .addContainerGap()))
         );
         jPanel1Layout.setVerticalGroup(
@@ -164,14 +166,14 @@ public class frmPrincipal extends javax.swing.JFrame {
         jpPrincipal.setLayout(jpPrincipalLayout);
         jpPrincipalLayout.setHorizontalGroup(
             jpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 990, Short.MAX_VALUE)
+            .addGap(0, 1000, Short.MAX_VALUE)
         );
         jpPrincipalLayout.setVerticalGroup(
             jpPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 650, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 990, 650));
+        getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 1000, 650));
 
         jpUser.setBackground(new java.awt.Color(255, 102, 0));
 
@@ -213,7 +215,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jpUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, -1, -1));
 
-        setSize(new java.awt.Dimension(1300, 700));
+        setSize(new java.awt.Dimension(1310, 700));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
    
