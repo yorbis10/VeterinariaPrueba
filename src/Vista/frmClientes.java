@@ -41,7 +41,10 @@ public class frmClientes extends javax.swing.JInternalFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
-        rSButtonIcon_new1 = new newscomponents.RSButtonIcon_new();
+        btnNuevo = new newscomponents.RSButtonIcon_new();
+        btnGuardar = new newscomponents.RSButtonIcon_new();
+        btnActualizar = new newscomponents.RSButtonIcon_new();
+        btnCancelar = new newscomponents.RSButtonIcon_new();
         jScrollPane1 = new javax.swing.JScrollPane();
         rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -228,29 +231,66 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
-        rSButtonIcon_new1.setBackground(new java.awt.Color(255, 102, 0));
-        rSButtonIcon_new1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        rSButtonIcon_new1.setForeground(new java.awt.Color(0, 0, 0));
-        rSButtonIcon_new1.setText("Nuevo");
-        rSButtonIcon_new1.setBackgroundHover(new java.awt.Color(204, 204, 0));
-        rSButtonIcon_new1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        rSButtonIcon_new1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSButtonIcon_new1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
+        btnNuevo.setBackground(new java.awt.Color(153, 153, 153));
+        btnNuevo.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnNuevo.setForeground(new java.awt.Color(0, 0, 0));
+        btnNuevo.setText("Nuevo");
+        btnNuevo.setBackgroundHover(new java.awt.Color(255, 102, 0));
+        btnNuevo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNuevo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnNuevo.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
+
+        btnGuardar.setBackground(new java.awt.Color(153, 153, 153));
+        btnGuardar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnGuardar.setForeground(new java.awt.Color(0, 0, 0));
+        btnGuardar.setText("Guardar");
+        btnGuardar.setBackgroundHover(new java.awt.Color(255, 102, 0));
+        btnGuardar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnGuardar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnGuardar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
+
+        btnActualizar.setBackground(new java.awt.Color(153, 153, 153));
+        btnActualizar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnActualizar.setForeground(new java.awt.Color(0, 0, 0));
+        btnActualizar.setText("Actualizar");
+        btnActualizar.setBackgroundHover(new java.awt.Color(255, 102, 0));
+        btnActualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnActualizar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnActualizar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
+
+        btnCancelar.setBackground(new java.awt.Color(153, 153, 153));
+        btnCancelar.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        btnCancelar.setForeground(new java.awt.Color(0, 0, 0));
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setBackgroundHover(new java.awt.Color(255, 102, 0));
+        btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnCancelar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+            .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap(25, Short.MAX_VALUE)
-                .addComponent(rSButtonIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnNuevo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(rSButtonIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnNuevo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -396,6 +436,10 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private newscomponents.RSButtonIcon_new btnActualizar;
+    private newscomponents.RSButtonIcon_new btnCancelar;
+    private newscomponents.RSButtonIcon_new btnGuardar;
+    private newscomponents.RSButtonIcon_new btnNuevo;
     private RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -411,7 +455,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JMenuItem jmenuacerca;
-    private newscomponents.RSButtonIcon_new rSButtonIcon_new1;
     private RSMaterialComponent.RSTableMetroCustom rSTableMetroCustom1;
     private RSMaterialComponent.RSTextFieldMaterial txtApellido;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
