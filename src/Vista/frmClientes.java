@@ -28,20 +28,22 @@ public class frmClientes extends javax.swing.JInternalFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
-        rSTextFieldMaterial1 = new RSMaterialComponent.RSTextFieldMaterial();
-        jLabel1 = new javax.swing.JLabel();
-        rSTextFieldMaterial2 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSTextFieldMaterial3 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSTextFieldMaterial4 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSTextFieldMaterial5 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSTextFieldMaterial6 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSTextFieldMaterial7 = new RSMaterialComponent.RSTextFieldMaterial();
-        rSComboBoxMaterial1 = new RSMaterialComponent.RSComboBoxMaterial();
-        rSTextFieldMaterial8 = new RSMaterialComponent.RSTextFieldMaterial();
+        txtBuscar = new RSMaterialComponent.RSTextFieldMaterialIcon();
+        jPanel1 = new javax.swing.JPanel();
+        cmbTipoDocumento = new RSMaterialComponent.RSComboBoxMaterial();
+        txtDocumento = new RSMaterialComponent.RSTextFieldMaterial();
+        txtNombre = new RSMaterialComponent.RSTextFieldMaterial();
+        txtApellido = new RSMaterialComponent.RSTextFieldMaterial();
+        txtCorreo = new RSMaterialComponent.RSTextFieldMaterial();
+        txtDireccion = new RSMaterialComponent.RSTextFieldMaterial();
+        txtCiudad = new RSMaterialComponent.RSTextFieldMaterial();
+        txtTelefono = new RSMaterialComponent.RSTextFieldMaterial();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
+        jPanel2 = new javax.swing.JPanel();
+        rSButtonIcon_new1 = new newscomponents.RSButtonIcon_new();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -57,6 +59,200 @@ public class frmClientes extends javax.swing.JInternalFrame {
         setTitle("Clientes");
         setToolTipText("");
         setPreferredSize(new java.awt.Dimension(1000, 650));
+
+        txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
+        txtBuscar.setColorIcon(new java.awt.Color(255, 102, 0));
+        txtBuscar.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtBuscar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtBuscar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
+        txtBuscar.setPhColor(new java.awt.Color(0, 0, 0));
+        txtBuscar.setPlaceholder("Buscar");
+        txtBuscar.setSelectionColor(new java.awt.Color(255, 102, 0));
+
+        jPanel1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Documento", "Cedula De Ciudadania", "Tarjeta De Identidad", "Cedula De Extranjeria", "Pasaporte", "Nit" }));
+        cmbTipoDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        cmbTipoDocumento.setDoubleBuffered(true);
+        cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
+
+        txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
+        txtDocumento.setToolTipText("");
+        txtDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDocumento.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtDocumento.setPhColor(new java.awt.Color(0, 0, 0));
+        txtDocumento.setPlaceholder("Documento");
+        txtDocumento.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDocumentoActionPerformed(evt);
+            }
+        });
+
+        txtNombre.setForeground(new java.awt.Color(0, 0, 0));
+        txtNombre.setToolTipText("");
+        txtNombre.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtNombre.setPhColor(new java.awt.Color(0, 0, 0));
+        txtNombre.setPlaceholder("Nombres");
+        txtNombre.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtNombre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNombreActionPerformed(evt);
+            }
+        });
+
+        txtApellido.setForeground(new java.awt.Color(0, 0, 0));
+        txtApellido.setToolTipText("");
+        txtApellido.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtApellido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtApellido.setPhColor(new java.awt.Color(0, 0, 0));
+        txtApellido.setPlaceholder("Apellidos");
+        txtApellido.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtApellido.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtApellidoActionPerformed(evt);
+            }
+        });
+
+        txtCorreo.setForeground(new java.awt.Color(0, 0, 0));
+        txtCorreo.setToolTipText("");
+        txtCorreo.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtCorreo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtCorreo.setPhColor(new java.awt.Color(0, 0, 0));
+        txtCorreo.setPlaceholder("Correo");
+        txtCorreo.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtCorreo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCorreoActionPerformed(evt);
+            }
+        });
+
+        txtDireccion.setForeground(new java.awt.Color(0, 0, 0));
+        txtDireccion.setToolTipText("");
+        txtDireccion.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDireccion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtDireccion.setPhColor(new java.awt.Color(0, 0, 0));
+        txtDireccion.setPlaceholder("Dirección");
+        txtDireccion.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDireccion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDireccionActionPerformed(evt);
+            }
+        });
+
+        txtCiudad.setForeground(new java.awt.Color(0, 0, 0));
+        txtCiudad.setToolTipText("");
+        txtCiudad.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtCiudad.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtCiudad.setPhColor(new java.awt.Color(0, 0, 0));
+        txtCiudad.setPlaceholder("Ciudad");
+        txtCiudad.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtCiudad.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtCiudadActionPerformed(evt);
+            }
+        });
+
+        txtTelefono.setForeground(new java.awt.Color(0, 0, 0));
+        txtTelefono.setToolTipText("");
+        txtTelefono.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtTelefono.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        txtTelefono.setPhColor(new java.awt.Color(0, 0, 0));
+        txtTelefono.setPlaceholder("Telefono");
+        txtTelefono.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoActionPerformed(evt);
+            }
+        });
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
+        jScrollPane2.setViewportView(jTextArea1);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 238, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane2)))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(0, 19, Short.MAX_VALUE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtCiudad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        rSButtonIcon_new1.setBackground(new java.awt.Color(255, 102, 0));
+        rSButtonIcon_new1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        rSButtonIcon_new1.setForeground(new java.awt.Color(0, 0, 0));
+        rSButtonIcon_new1.setText("Nuevo");
+        rSButtonIcon_new1.setBackgroundHover(new java.awt.Color(204, 204, 0));
+        rSButtonIcon_new1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        rSButtonIcon_new1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        rSButtonIcon_new1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(25, Short.MAX_VALUE)
+                .addComponent(rSButtonIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(rSButtonIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         rSTableMetroCustom1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -79,123 +275,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
         rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(255, 102, 0));
         jScrollPane1.setViewportView(rSTableMetroCustom1);
-
-        rSTextFieldMaterial1.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial1.setToolTipText("");
-        rSTextFieldMaterial1.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial1.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial1.setPlaceholder("Numero de Documento");
-        rSTextFieldMaterial1.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial1ActionPerformed(evt);
-            }
-        });
-
-        jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jLabel1.setText("Documento");
-
-        rSTextFieldMaterial2.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial2.setToolTipText("");
-        rSTextFieldMaterial2.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial2.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial2.setPlaceholder("Nombres");
-        rSTextFieldMaterial2.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial2ActionPerformed(evt);
-            }
-        });
-
-        rSTextFieldMaterial3.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial3.setToolTipText("");
-        rSTextFieldMaterial3.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial3.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial3.setPlaceholder("Correo");
-        rSTextFieldMaterial3.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial3ActionPerformed(evt);
-            }
-        });
-
-        rSTextFieldMaterial4.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial4.setToolTipText("");
-        rSTextFieldMaterial4.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial4.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial4.setPlaceholder("Apellidos");
-        rSTextFieldMaterial4.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial4ActionPerformed(evt);
-            }
-        });
-
-        rSTextFieldMaterial5.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial5.setToolTipText("");
-        rSTextFieldMaterial5.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial5.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial5.setPlaceholder("Tipo");
-        rSTextFieldMaterial5.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial5.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial5ActionPerformed(evt);
-            }
-        });
-
-        rSTextFieldMaterial6.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial6.setToolTipText("");
-        rSTextFieldMaterial6.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial6.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial6.setPlaceholder("Dirección");
-        rSTextFieldMaterial6.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial6ActionPerformed(evt);
-            }
-        });
-
-        rSTextFieldMaterial7.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial7.setToolTipText("");
-        rSTextFieldMaterial7.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial7.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial7.setPlaceholder("Ciudad");
-        rSTextFieldMaterial7.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial7ActionPerformed(evt);
-            }
-        });
-
-        rSComboBoxMaterial1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo de Documento", "CEDULA DE CIUDADANIA", "TARJETA DE IDENTIDAD", "CEDULA DE EXTRANJERIA", "PASAPORTE", "NIT" }));
-        rSComboBoxMaterial1.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSComboBoxMaterial1.setDoubleBuffered(true);
-        rSComboBoxMaterial1.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
-
-        rSTextFieldMaterial8.setForeground(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial8.setToolTipText("");
-        rSTextFieldMaterial8.setColorMaterial(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSTextFieldMaterial8.setPhColor(new java.awt.Color(0, 0, 0));
-        rSTextFieldMaterial8.setPlaceholder("Telefono");
-        rSTextFieldMaterial8.setSelectionColor(new java.awt.Color(255, 102, 0));
-        rSTextFieldMaterial8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSTextFieldMaterial8ActionPerformed(evt);
-            }
-        });
-
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
-        jScrollPane2.setViewportView(jTextArea1);
 
         jMenu1.setText("Menu");
 
@@ -248,56 +327,27 @@ public class frmClientes extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(rSTextFieldMaterial4, javax.swing.GroupLayout.PREFERRED_SIZE, 310, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterial8, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterial6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSComboBoxMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, 262, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, 211, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterial2, javax.swing.GroupLayout.DEFAULT_SIZE, 340, Short.MAX_VALUE))
-                    .addComponent(jScrollPane2)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(rSTextFieldMaterial7, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(55, 55, 55)
-                        .addComponent(rSTextFieldMaterial3, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterial5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 35, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(32, 32, 32)
+                .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rSTextFieldMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSTextFieldMaterial2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLabel1)
-                        .addComponent(rSComboBoxMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rSTextFieldMaterial4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSTextFieldMaterial6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(rSTextFieldMaterial8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(rSTextFieldMaterial7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSTextFieldMaterial3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSTextFieldMaterial5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 9, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();
@@ -316,62 +366,60 @@ public class frmClientes extends javax.swing.JInternalFrame {
         abrir.setVisible(true);
     }//GEN-LAST:event_jmenuacercaActionPerformed
 
-    private void rSTextFieldMaterial1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial1ActionPerformed
+    private void txtDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial1ActionPerformed
+    }//GEN-LAST:event_txtDocumentoActionPerformed
 
-    private void rSTextFieldMaterial2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial2ActionPerformed
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial2ActionPerformed
+    }//GEN-LAST:event_txtNombreActionPerformed
 
-    private void rSTextFieldMaterial3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial3ActionPerformed
+    private void txtCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial3ActionPerformed
+    }//GEN-LAST:event_txtCorreoActionPerformed
 
-    private void rSTextFieldMaterial4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial4ActionPerformed
+    private void txtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial4ActionPerformed
+    }//GEN-LAST:event_txtApellidoActionPerformed
 
-    private void rSTextFieldMaterial5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial5ActionPerformed
+    private void txtDireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDireccionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial5ActionPerformed
+    }//GEN-LAST:event_txtDireccionActionPerformed
 
-    private void rSTextFieldMaterial6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial6ActionPerformed
+    private void txtCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtCiudadActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial6ActionPerformed
+    }//GEN-LAST:event_txtCiudadActionPerformed
 
-    private void rSTextFieldMaterial7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial7ActionPerformed
+    private void txtTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial7ActionPerformed
-
-    private void rSTextFieldMaterial8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterial8ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rSTextFieldMaterial8ActionPerformed
+    }//GEN-LAST:event_txtTelefonoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuBuscar;
     private javax.swing.JMenuItem jMenuNuevo;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JMenuItem jmenuacerca;
-    private RSMaterialComponent.RSComboBoxMaterial rSComboBoxMaterial1;
+    private newscomponents.RSButtonIcon_new rSButtonIcon_new1;
     private RSMaterialComponent.RSTableMetroCustom rSTableMetroCustom1;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial1;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial2;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial3;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial4;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial5;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial6;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial7;
-    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial8;
+    private RSMaterialComponent.RSTextFieldMaterial txtApellido;
+    private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
+    private RSMaterialComponent.RSTextFieldMaterial txtCiudad;
+    private RSMaterialComponent.RSTextFieldMaterial txtCorreo;
+    private RSMaterialComponent.RSTextFieldMaterial txtDireccion;
+    private RSMaterialComponent.RSTextFieldMaterial txtDocumento;
+    private RSMaterialComponent.RSTextFieldMaterial txtNombre;
+    private RSMaterialComponent.RSTextFieldMaterial txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
