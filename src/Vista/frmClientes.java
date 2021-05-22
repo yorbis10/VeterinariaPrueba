@@ -241,14 +241,23 @@ public class frmClientes extends javax.swing.JInternalFrame {
         jButton1.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/nuevo.png"))); // NOI18N
         jButton1.setText("Nuevo");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton1.setIconTextGap(6);
 
         jButton2.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/guardar.png"))); // NOI18N
         jButton2.setText("Guardar");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton2.setIconTextGap(6);
 
         jButton3.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/actualizar.png"))); // NOI18N
         jButton3.setText("Actualizar");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton3.setIconTextGap(6);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
@@ -258,6 +267,9 @@ public class frmClientes extends javax.swing.JInternalFrame {
         jButton4.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/eliminar.png"))); // NOI18N
         jButton4.setText("Eliminar");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton4.setIconTextGap(6);
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -267,6 +279,9 @@ public class frmClientes extends javax.swing.JInternalFrame {
         jButton5.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/cancelar.png"))); // NOI18N
         jButton5.setText("Cancelar");
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton5.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jButton5.setIconTextGap(6);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
