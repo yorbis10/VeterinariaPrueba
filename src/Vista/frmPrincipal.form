@@ -329,6 +329,10 @@
           <Font name="Dialog" size="11" style="1"/>
         </Property>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JDesktopPane(){&#xa;    public void paintComponent(Graphics g){&#xa;        g.drawImage(image,0,0,getWidth(),getHeight(),this);&#xa;    }&#xa;}"/>
+        <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="int ale = (int) (Math.random()*8+1);&#xa;ImageIcon icon = new ImageIcon(getClass().getResource(&quot;/Recursos/Principal/fondo&quot;+ale+&quot;.jpg&quot;));&#xa; Image image = icon.getImage();"/>
+      </AuxValues>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="310" y="50" width="1000" height="650"/>

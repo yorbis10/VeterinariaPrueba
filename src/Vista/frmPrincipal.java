@@ -31,7 +31,14 @@ public class frmPrincipal extends javax.swing.JFrame {
         jpUser = new javax.swing.JPanel();
         btnCerrarSesion = new RSMaterialComponent.RSButtonMaterialIconTwo();
         rSLabelTextIcon1 = new RSMaterialComponent.RSLabelTextIcon();
-        jpPrincipal = new javax.swing.JDesktopPane();
+        int ale = (int) (Math.random()*8+1);
+        ImageIcon icon = new ImageIcon(getClass().getResource("/Recursos/Principal/fondo"+ale+".jpg"));
+        Image image = icon.getImage();
+        jpPrincipal = new javax.swing.JDesktopPane(){
+            public void paintComponent(Graphics g){
+                g.drawImage(image,0,0,getWidth(),getHeight(),this);
+            }
+        };
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Sorftware para manejo de mascotas en una Veterinaria");
