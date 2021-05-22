@@ -42,7 +42,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Sorftware para manejo de mascotas en una Veterinaria");
-        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(255, 102, 0));
@@ -228,7 +228,7 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 1000, 650));
 
-        setSize(new java.awt.Dimension(1310, 700));
+        setSize(new java.awt.Dimension(1326, 739));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
    
@@ -341,18 +341,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         });
     }
 
-//     public class fondo extends JPanel {
-//
-//        private Image imagen;
-//
-//        public void paint(Graphics g) {
-//            imagen = new ImageIcon(getClass().getResource("/Img/fondo3.jpg")).getImage();
-//            g.drawImage(imagen, 0, 0, getWidth(), getHeight(), this);
-//            setOpaque(false);
-//            super.paint(g);
-//
-//        }
-//    }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private RSMaterialComponent.RSButtonMaterialIconTwo btnCerrarSesion;
