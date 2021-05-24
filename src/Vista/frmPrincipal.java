@@ -1,3 +1,4 @@
+//principal [58,159,171], secundario [64,177,190]
 package Vista;
 
 import java.awt.*;
