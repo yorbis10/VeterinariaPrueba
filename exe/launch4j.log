@@ -1,0 +1,35 @@
+
+
+Version:	3.14
+CmdLine:	D:\OneDrive - Grupo Lecorp\Documentos\NetBeansProjects\VeterinariaPrueba\exe\Veterinariasof.exe --l4j-debug
+WOW64:		yes
+Working dir:	D:\OneDrive - Grupo Lecorp\Documentos\NetBeansProjects\VeterinariaPrueba\exe\.
+Java min ver:	1.008.000
+Java max ver:	
+64-bit search:	SOFTWARE\JavaSoft\Java Runtime Environment...
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Runtime Environment\1.8.0_291
+Check launcher:	C:\Program Files\Java\jre1.8.0_291\bin\javaw.exe (OK)
+Match:		1.008.000_291
+64-bit search:	SOFTWARE\JavaSoft\Java Development Kit...
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8
+Ignore:		1.008.000
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_221
+Ignore:		1.008.000_221
+Check:		SOFTWARE\JavaSoft\Java Development Kit\1.8.0_261
+Ignore:		1.008.000_261
+64-bit search:	SOFTWARE\JavaSoft\JRE...
+64-bit search:	SOFTWARE\JavaSoft\JDK...
+Check:		SOFTWARE\JavaSoft\JDK\13
+Check launcher:	C:\Program Files\Java\jdk1.8.0_221\bin\javaw.exe (OK)
+Match:		1.013.000
+Check:		SOFTWARE\JavaSoft\JDK\14.0.2
+Check launcher:	C:\Program Files\Java\jdk-14.0.2\bin\javaw.exe (OK)
+Match:		1.014.000_002
+Runtime used:	1.014.000_002 (64-bit)
+Launcher:	C:\Program Files\Java\jdk-14.0.2\bin\javaw.exe
+Launcher args:	-jar "D:\OneDrive - Grupo Lecorp\Documentos\NetBeansProjects\VeterinariaPrueba\exe\Veterinariasof.exe"
+Args length:	102/32768 chars
+Exit code:	0
