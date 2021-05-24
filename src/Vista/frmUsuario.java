@@ -2,9 +2,9 @@ package Vista;
 
 import javax.swing.JOptionPane;
 
-public class frmClientes extends javax.swing.JInternalFrame {
+public class frmUsuario extends javax.swing.JInternalFrame {
 
-    public frmClientes() {
+    public frmUsuario() {
         initComponents();
 
     }
@@ -46,7 +46,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         setBackground(new java.awt.Color(255, 255, 255));
         setForeground(new java.awt.Color(255, 255, 255));
-        setTitle("Formulario Clientes");
+        setTitle("Administrar Ususario");
         setToolTipText("");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setPreferredSize(new java.awt.Dimension(1000, 650));

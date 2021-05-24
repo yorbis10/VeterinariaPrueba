@@ -3,18 +3,15 @@ package Vista;
 import java.awt.*;
 import javax.swing.*;
 
-
 public class frmPrincipal extends javax.swing.JFrame {
 
-    
     public frmPrincipal() {
-            
+
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Recursos/icon.png")).getImage());
-       // this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
+        // this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
     }
 
-    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -41,7 +38,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         };
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
-        setTitle("Sorftware para manejo de mascotas en una Veterinaria");
+        setTitle("Sorftware Veterinaria");
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -231,35 +228,27 @@ public class frmPrincipal extends javax.swing.JFrame {
         setSize(new java.awt.Dimension(1326, 739));
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-   
-    
+
     frmClientes fCliente = new frmClientes();
     frmMedicamentos fMedicamentos = new frmMedicamentos();
     frmMascotas fMascotas = new frmMascotas();
     frmConsulta fConsulta = new frmConsulta();
-    frmUsuarios fUsuarios = new frmUsuarios();
+    frmUsuario fUsuarios = new frmUsuario();
 
 
     private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
-        // frmClientes fCliente = new frmClientes();
         
-        jpPrincipal.add(fCliente);
+        jpPrincipal.add(fCliente);  
+         ocultar();
         fCliente.setVisible(true);
-        fMascotas.setVisible(false);
-        fConsulta.setVisible(false);
-        fMedicamentos.setVisible(false);
-        fUsuarios.setVisible(false);
         fCliente.setLocation((jpPrincipal.getWidth() - fCliente.getWidth()) / 2, (jpPrincipal.getHeight() - fCliente.getHeight()) / 2);
     }//GEN-LAST:event_btnClientesActionPerformed
 
     private void btnMedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicamentosActionPerformed
-        //frmMedicamentos fMedicamentos = new frmMedicamentos();
-        jpPrincipal.add(fMedicamentos);
+        
+        jpPrincipal.add(fMedicamentos);    
+        ocultar();
         fMedicamentos.setVisible(true);
-        fCliente.setVisible(false);
-        fMascotas.setVisible(false);
-        fConsulta.setVisible(false);
-        fUsuarios.setVisible(false);
         fMedicamentos.setLocation((jpPrincipal.getWidth() - fMedicamentos.getWidth()) / 2, (jpPrincipal.getHeight() - fMedicamentos.getHeight()) / 2);
     }//GEN-LAST:event_btnMedicamentosActionPerformed
 
@@ -268,42 +257,41 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMascotasActionPerformed
-        //frmMascotas fMascotas = new frmMascotas();
-        jpPrincipal.add(fMascotas);
+        
+        jpPrincipal.add(fMascotas); 
+        ocultar();
         fMascotas.setVisible(true);
-        fCliente.setVisible(false);
-        fConsulta.setVisible(false);
-        fMedicamentos.setVisible(false);
-        fUsuarios.setVisible(false);
         fMascotas.setLocation((jpPrincipal.getWidth() - fMascotas.getWidth()) / 2, (jpPrincipal.getHeight() - fMascotas.getHeight()) / 2);
     }//GEN-LAST:event_btnMascotasActionPerformed
 
     private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
-        //frmConsulta fConsulta = new frmConsulta();
-        jpPrincipal.add(fConsulta);
+       
+        jpPrincipal.add(fConsulta);     
+         ocultar();
         fConsulta.setVisible(true);
-        fCliente.setVisible(false);
-        fMascotas.setVisible(false);        
-        fMedicamentos.setVisible(false);
-        fUsuarios.setVisible(false);
         fConsulta.setLocation((jpPrincipal.getWidth() - fConsulta.getWidth()) / 2, (jpPrincipal.getHeight() - fConsulta.getHeight()) / 2);
     }//GEN-LAST:event_btnConsultaActionPerformed
 
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
-        //frmUsuarios fUsuarios = new frmUsuarios();
-        jpPrincipal.add(fUsuarios);
-        fUsuarios.setVisible(true);
-        fCliente.setVisible(false);
-        fMascotas.setVisible(false);
-        fConsulta.setVisible(false);
-        fMedicamentos.setVisible(false);
         
+        jpPrincipal.add(fUsuarios);  
+        ocultar();
+        fUsuarios.setVisible(true);
         fUsuarios.setLocation((jpPrincipal.getWidth() - fUsuarios.getWidth()) / 2, (jpPrincipal.getHeight() - fUsuarios.getHeight()) / 2);
     }//GEN-LAST:event_btnUsuarioActionPerformed
 
     private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnCerrarSesionActionPerformed
+
+    public void ocultar() {
+              
+        fCliente.dispose();
+        fMascotas.dispose();
+        fConsulta.dispose();
+        fMedicamentos.dispose();
+        fUsuarios.dispose();
+    }
 
     /**
      * @param args the command line arguments
@@ -340,7 +328,6 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
     }
-
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
