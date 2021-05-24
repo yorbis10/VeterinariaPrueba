@@ -54,13 +54,13 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtBuscar.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
         txtBuscar.setToolTipText("Documento, Nombre, Apellido, Correo");
-        txtBuscar.setColorIcon(new java.awt.Color(255, 102, 0));
-        txtBuscar.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtBuscar.setColorIcon(new java.awt.Color(58, 159, 171));
+        txtBuscar.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtBuscar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtBuscar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
         txtBuscar.setPhColor(new java.awt.Color(0, 0, 0));
         txtBuscar.setPlaceholder("Buscar");
-        txtBuscar.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtBuscar.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtBuscar.setThemeTooltip(necesario.Global.THEMETOOLTIP.LIGHT);
 
         PanelDatos.setBackground(new java.awt.Color(255, 255, 255));
@@ -68,7 +68,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Mascota", "Perros", "Gatos", "Pájaros", "Peces", "Conejo", "Hámsters", "Tortuga", "Hurón", "Serpientes", "Iguanas", "Cerdo miniatura", "Otros" }));
         cmbTipoDocumento.setToolTipText("");
-        cmbTipoDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        cmbTipoDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         cmbTipoDocumento.setDoubleBuffered(true);
         cmbTipoDocumento.setEnabled(false);
         cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
@@ -76,12 +76,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumento.setToolTipText("");
-        txtDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtDocumento.setEnabled(false);
         txtDocumento.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtDocumento.setPhColor(new java.awt.Color(0, 0, 0));
         txtDocumento.setPlaceholder("Documento");
-        txtDocumento.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDocumento.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtDocumento.setThemeTooltip(null);
         txtDocumento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,12 +91,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         txtNombre.setForeground(new java.awt.Color(0, 0, 0));
         txtNombre.setToolTipText("");
-        txtNombre.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtNombre.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtNombre.setEnabled(false);
         txtNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtNombre.setPhColor(new java.awt.Color(0, 0, 0));
         txtNombre.setPlaceholder("Nombre");
-        txtNombre.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtNombre.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtNombre.setThemeTooltip(null);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,12 +106,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         txtRaza.setForeground(new java.awt.Color(0, 0, 0));
         txtRaza.setToolTipText("");
-        txtRaza.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtRaza.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtRaza.setEnabled(false);
         txtRaza.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtRaza.setPhColor(new java.awt.Color(0, 0, 0));
         txtRaza.setPlaceholder("Raza");
-        txtRaza.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtRaza.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtRaza.setThemeTooltip(null);
         txtRaza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,12 +121,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         txtEdad.setForeground(new java.awt.Color(0, 0, 0));
         txtEdad.setToolTipText("");
-        txtEdad.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtEdad.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtEdad.setEnabled(false);
         txtEdad.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtEdad.setPhColor(new java.awt.Color(0, 0, 0));
         txtEdad.setPlaceholder("Edad");
-        txtEdad.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtEdad.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtEdad.setThemeTooltip(null);
         txtEdad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,13 +135,13 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         });
 
         txtObservacion.setColumns(20);
-        txtObservacion.setFont(new java.awt.Font("Dialog", 2, 14)); // NOI18N
+        txtObservacion.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         txtObservacion.setRows(5);
         txtObservacion.setToolTipText("");
-        txtObservacion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
+        txtObservacion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(58, 159, 171))); // NOI18N
         txtObservacion.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txtObservacion.setEnabled(false);
-        txtObservacion.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtObservacion.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane2.setViewportView(txtObservacion);
 
         javax.swing.GroupLayout PanelDatosLayout = new javax.swing.GroupLayout(PanelDatos);
@@ -267,15 +267,15 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(58, 159, 171));
         rSTableMetroCustom1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         rSTableMetroCustom1.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(58, 159, 171));
         jScrollPane1.setViewportView(rSTableMetroCustom1);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
@@ -358,8 +358,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
-
-        getAccessibleContext().setAccessibleName("Formulario Mascotas");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

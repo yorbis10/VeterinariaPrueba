@@ -51,8 +51,8 @@ public class frmAcerca extends javax.swing.JFrame {
         });
         getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 37, -1));
 
-        lbltexto.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lbltexto.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "About", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 12), new java.awt.Color(255, 102, 0))); // NOI18N
+        lbltexto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
+        lbltexto.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acerca", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 18), new java.awt.Color(58, 159, 171))); // NOI18N
         getContentPane().add(lbltexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 260));
 
         pack();

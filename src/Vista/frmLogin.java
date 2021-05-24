@@ -41,7 +41,7 @@ public class frmLogin extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
 
-        jPanel2.setBackground(new java.awt.Color(255, 102, 0));
+        jPanel2.setBackground(new java.awt.Color(58, 159, 171));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Login/pet.png"))); // NOI18N
 
@@ -71,9 +71,9 @@ public class frmLogin extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel4.setBackground(new java.awt.Color(255, 102, 0));
+        jLabel4.setBackground(new java.awt.Color(58, 159, 171));
         jLabel4.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 102, 0));
+        jLabel4.setForeground(new java.awt.Color(58, 159, 171));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Iniciar Sesion");
         jLabel4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -90,20 +90,20 @@ public class frmLogin extends javax.swing.JFrame {
 
         rSButtonGradientIcon_new2.setBackground(new java.awt.Color(255, 102, 102));
         rSButtonGradientIcon_new2.setText("Salir");
-        rSButtonGradientIcon_new2.setColorPrimario(new java.awt.Color(255, 153, 0));
-        rSButtonGradientIcon_new2.setColorPrimarioHover(new java.awt.Color(255, 102, 0));
-        rSButtonGradientIcon_new2.setColorSecundario(new java.awt.Color(255, 102, 0));
-        rSButtonGradientIcon_new2.setColorSecundarioHover(new java.awt.Color(255, 153, 0));
+        rSButtonGradientIcon_new2.setColorPrimario(new java.awt.Color(64, 177, 190));
+        rSButtonGradientIcon_new2.setColorPrimarioHover(new java.awt.Color(58, 159, 171));
+        rSButtonGradientIcon_new2.setColorSecundario(new java.awt.Color(58, 159, 171));
+        rSButtonGradientIcon_new2.setColorSecundarioHover(new java.awt.Color(64, 177, 190));
         rSButtonGradientIcon_new2.setFont(new java.awt.Font("Dialog", 1, 15)); // NOI18N
         rSButtonGradientIcon_new2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         rSButtonGradientIcon_new2.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.EXIT_TO_APP);
 
         btnLogin.setBackground(new java.awt.Color(255, 102, 102));
         btnLogin.setText("Login");
-        btnLogin.setColorPrimario(new java.awt.Color(255, 102, 0));
-        btnLogin.setColorPrimarioHover(new java.awt.Color(255, 153, 0));
-        btnLogin.setColorSecundario(new java.awt.Color(255, 153, 0));
-        btnLogin.setColorSecundarioHover(new java.awt.Color(255, 102, 0));
+        btnLogin.setColorPrimario(new java.awt.Color(58, 159, 171));
+        btnLogin.setColorPrimarioHover(new java.awt.Color(64, 177, 190));
+        btnLogin.setColorSecundario(new java.awt.Color(64, 177, 190));
+        btnLogin.setColorSecundarioHover(new java.awt.Color(58, 159, 171));
         btnLogin.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         btnLogin.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnLogin.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ACCOUNT_CIRCLE);
@@ -114,32 +114,32 @@ public class frmLogin extends javax.swing.JFrame {
         });
 
         txtUsuario.setForeground(new java.awt.Color(0, 0, 0));
-        txtUsuario.setColorIcon(new java.awt.Color(255, 102, 0));
-        txtUsuario.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtUsuario.setColorIcon(new java.awt.Color(58, 159, 171));
+        txtUsuario.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtUsuario.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtUsuario.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ACCOUNT_CIRCLE);
         txtUsuario.setPhColor(new java.awt.Color(0, 0, 0));
         txtUsuario.setPlaceholder("Usuario");
-        txtUsuario.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtUsuario.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtUsuario.setThemeTooltip(null);
 
         txtError.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtError.setForeground(new java.awt.Color(255, 0, 0));
         txtError.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
 
-        rSProgressMaterial1.setForeground(new java.awt.Color(255, 102, 0));
+        rSProgressMaterial1.setForeground(new java.awt.Color(58, 159, 171));
         rSProgressMaterial1.setToolTipText("");
         rSProgressMaterial1.setRequestFocusEnabled(false);
         rSProgressMaterial1.setTimeProgress(2500);
         rSProgressMaterial1.setWidthProgress(5);
 
         txtClave.setForeground(new java.awt.Color(0, 0, 0));
-        txtClave.setColorIcon(new java.awt.Color(255, 102, 0));
-        txtClave.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtClave.setColorIcon(new java.awt.Color(58, 159, 171));
+        txtClave.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtClave.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtClave.setPhColor(new java.awt.Color(0, 0, 0));
         txtClave.setPlaceholder("Contraseña");
-        txtClave.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtClave.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtClave.setThemeTooltip(null);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);

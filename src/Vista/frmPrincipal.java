@@ -42,7 +42,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(255, 102, 0));
+        jPanel1.setBackground(new java.awt.Color(58, 159, 171));
 
         lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/logo300.png"))); // NOI18N
 
@@ -52,9 +52,9 @@ public class frmPrincipal extends javax.swing.JFrame {
         lblMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Principal/content.png"))); // NOI18N
         lblMenu.setText("MENU");
 
-        btnClientes.setBackground(new java.awt.Color(255, 102, 0));
+        btnClientes.setBackground(new java.awt.Color(58, 159, 171));
         btnClientes.setText("Clientes");
-        btnClientes.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnClientes.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnClientes.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnClientes.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
         btnClientes.addActionListener(new java.awt.event.ActionListener() {
@@ -63,9 +63,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnMascotas.setBackground(new java.awt.Color(255, 102, 0));
+        btnMascotas.setBackground(new java.awt.Color(58, 159, 171));
         btnMascotas.setText("Mascotas");
-        btnMascotas.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnMascotas.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnMascotas.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnMascotas.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PETS);
         btnMascotas.addActionListener(new java.awt.event.ActionListener() {
@@ -74,9 +74,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnConsulta.setBackground(new java.awt.Color(255, 102, 0));
+        btnConsulta.setBackground(new java.awt.Color(58, 159, 171));
         btnConsulta.setText("Consulta");
-        btnConsulta.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnConsulta.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnConsulta.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnConsulta.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD_BOX);
         btnConsulta.addActionListener(new java.awt.event.ActionListener() {
@@ -85,9 +85,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnMedicamentos.setBackground(new java.awt.Color(255, 102, 0));
+        btnMedicamentos.setBackground(new java.awt.Color(58, 159, 171));
         btnMedicamentos.setText("Medicamentos");
-        btnMedicamentos.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnMedicamentos.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnMedicamentos.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnMedicamentos.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.GRAIN);
         btnMedicamentos.addActionListener(new java.awt.event.ActionListener() {
@@ -96,9 +96,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnUsuario.setBackground(new java.awt.Color(255, 102, 0));
+        btnUsuario.setBackground(new java.awt.Color(58, 159, 171));
         btnUsuario.setText("Usuario");
-        btnUsuario.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnUsuario.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnUsuario.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnUsuario.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE_OUTLINE);
         btnUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -107,9 +107,9 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        btnSalir.setBackground(new java.awt.Color(255, 102, 0));
+        btnSalir.setBackground(new java.awt.Color(58, 159, 171));
         btnSalir.setText("Salir");
-        btnSalir.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnSalir.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnSalir.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
         btnSalir.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.EXIT_TO_APP);
         btnSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -167,11 +167,11 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 700));
 
-        jpUser.setBackground(new java.awt.Color(255, 102, 0));
+        jpUser.setBackground(new java.awt.Color(58, 159, 171));
 
-        btnCerrarSesion.setBackground(new java.awt.Color(255, 102, 0));
+        btnCerrarSesion.setBackground(new java.awt.Color(58, 159, 171));
         btnCerrarSesion.setText("Cerrar Sesion");
-        btnCerrarSesion.setBackgroundHover(new java.awt.Color(255, 153, 0));
+        btnCerrarSesion.setBackgroundHover(new java.awt.Color(64, 177, 190));
         btnCerrarSesion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         btnCerrarSesion.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.EXIT_TO_APP);
         btnCerrarSesion.addActionListener(new java.awt.event.ActionListener() {
@@ -209,7 +209,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         getContentPane().add(jpUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 1000, 50));
 
         jpPrincipal.setBackground(new java.awt.Color(255, 255, 255));
-        jpPrincipal.setForeground(new java.awt.Color(51, 51, 255));
+        jpPrincipal.setForeground(new java.awt.Color(255, 255, 255));
         jpPrincipal.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
 
         javax.swing.GroupLayout jpPrincipalLayout = new javax.swing.GroupLayout(jpPrincipal);

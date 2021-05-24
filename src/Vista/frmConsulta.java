@@ -54,13 +54,13 @@ public class frmConsulta extends javax.swing.JInternalFrame {
         txtBuscar.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
         txtBuscar.setToolTipText("Documento, Nombre, Apellido, Correo");
-        txtBuscar.setColorIcon(new java.awt.Color(255, 102, 0));
-        txtBuscar.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtBuscar.setColorIcon(new java.awt.Color(58, 159, 171));
+        txtBuscar.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtBuscar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtBuscar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
         txtBuscar.setPhColor(new java.awt.Color(0, 0, 0));
         txtBuscar.setPlaceholder("Buscar");
-        txtBuscar.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtBuscar.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtBuscar.setThemeTooltip(necesario.Global.THEMETOOLTIP.LIGHT);
 
         PanelDatos.setBackground(new java.awt.Color(255, 255, 255));
@@ -68,7 +68,7 @@ public class frmConsulta extends javax.swing.JInternalFrame {
 
         cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Documento", "Cedula De Ciudadania", "Tarjeta De Identidad", "Cedula De Extranjeria", "Pasaporte", "Nit" }));
         cmbTipoDocumento.setToolTipText("");
-        cmbTipoDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        cmbTipoDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         cmbTipoDocumento.setDoubleBuffered(true);
         cmbTipoDocumento.setEnabled(false);
         cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
@@ -76,12 +76,12 @@ public class frmConsulta extends javax.swing.JInternalFrame {
 
         txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumento.setToolTipText("");
-        txtDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtDocumento.setEnabled(false);
         txtDocumento.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtDocumento.setPhColor(new java.awt.Color(0, 0, 0));
         txtDocumento.setPlaceholder("Documento");
-        txtDocumento.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDocumento.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtDocumento.setThemeTooltip(null);
         txtDocumento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -91,12 +91,12 @@ public class frmConsulta extends javax.swing.JInternalFrame {
 
         txtNombre.setForeground(new java.awt.Color(0, 0, 0));
         txtNombre.setToolTipText("");
-        txtNombre.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtNombre.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtNombre.setEnabled(false);
         txtNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtNombre.setPhColor(new java.awt.Color(0, 0, 0));
         txtNombre.setPlaceholder("Nombres");
-        txtNombre.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtNombre.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtNombre.setThemeTooltip(null);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,20 +108,20 @@ public class frmConsulta extends javax.swing.JInternalFrame {
         txtSintomas.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         txtSintomas.setRows(5);
         txtSintomas.setToolTipText("");
-        txtSintomas.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SÍNTOMAS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
+        txtSintomas.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SÍNTOMAS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(58, 159, 171))); // NOI18N
         txtSintomas.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txtSintomas.setEnabled(false);
-        txtSintomas.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtSintomas.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane2.setViewportView(txtSintomas);
 
         txtDiagnostico.setColumns(20);
         txtDiagnostico.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         txtDiagnostico.setRows(5);
         txtDiagnostico.setToolTipText("");
-        txtDiagnostico.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DIAGNÓSTICO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
+        txtDiagnostico.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "DIAGNÓSTICO", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(58, 159, 171))); // NOI18N
         txtDiagnostico.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txtDiagnostico.setEnabled(false);
-        txtDiagnostico.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDiagnostico.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane4.setViewportView(txtDiagnostico);
 
         javax.swing.GroupLayout PanelDatosLayout = new javax.swing.GroupLayout(PanelDatos);
@@ -245,15 +245,15 @@ public class frmConsulta extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(58, 159, 171));
         rSTableMetroCustom1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         rSTableMetroCustom1.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(58, 159, 171));
         jScrollPane1.setViewportView(rSTableMetroCustom1);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
@@ -336,8 +336,6 @@ public class frmConsulta extends javax.swing.JInternalFrame {
         jMenuBar1.add(jMenu3);
 
         setJMenuBar(jMenuBar1);
-
-        getAccessibleContext().setAccessibleName("Formulario Consulta");
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

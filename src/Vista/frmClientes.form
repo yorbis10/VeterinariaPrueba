@@ -176,10 +176,10 @@
             </Property>
             <Property name="toolTipText" type="java.lang.String" value="Documento, Nombre, Apellido, Correo"/>
             <Property name="colorIcon" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="66" red="ff" type="rgb"/>
+              <Color blue="ab" green="9f" red="3a" type="rgb"/>
             </Property>
             <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="66" red="ff" type="rgb"/>
+              <Color blue="ab" green="9f" red="3a" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Dialog" size="18" style="1"/>
@@ -192,7 +192,7 @@
             </Property>
             <Property name="placeholder" type="java.lang.String" value="Buscar"/>
             <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="66" red="ff" type="rgb"/>
+              <Color blue="ab" green="9f" red="3a" type="rgb"/>
             </Property>
             <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
               <Value id="LIGHT"/>
@@ -288,7 +288,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="doubleBuffered" type="boolean" value="true"/>
                 <Property name="enabled" type="boolean" value="false"/>
@@ -307,7 +307,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -318,7 +318,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Documento"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -335,7 +335,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -346,7 +346,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Nombres"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -363,7 +363,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -374,7 +374,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Apellidos"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -391,7 +391,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -402,7 +402,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Correo"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -419,7 +419,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -430,7 +430,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Direcci&#xf3;n"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -447,7 +447,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -458,7 +458,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Ciudad"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -475,7 +475,7 @@
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
                 <Property name="colorMaterial" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="enabled" type="boolean" value="false"/>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -486,7 +486,7 @@
                 </Property>
                 <Property name="placeholder" type="java.lang.String" value="Telefono"/>
                 <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="themeTooltip" type="necesario.Global$THEMETOOLTIP" editor="org.netbeans.modules.form.editors.EnumEditor">
                   <Value id="null"/>
@@ -515,7 +515,7 @@
                       <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
                         <TitledBorder title="OBSERVACION">
                           <Font PropertyName="font" name="Dialog" size="10" style="1"/>
-                          <Color PropertyName="color" blue="0" green="66" red="ff" type="rgb"/>
+                          <Color PropertyName="color" blue="ab" green="9f" red="3a" type="rgb"/>
                         </TitledBorder>
                       </Border>
                     </Property>
@@ -524,7 +524,7 @@
                     </Property>
                     <Property name="enabled" type="boolean" value="false"/>
                     <Property name="selectionColor" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="0" green="66" red="ff" type="rgb"/>
+                      <Color blue="ab" green="9f" red="3a" type="rgb"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -692,16 +692,16 @@
                   </Table>
                 </Property>
                 <Property name="backgoundHead" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="backgoundHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="colorPrimaryText" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="colorSecundaryText" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Dialog" size="11" style="1"/>
@@ -716,7 +716,7 @@
                   <Font name="Dialog" size="11" style="1"/>
                 </Property>
                 <Property name="selectionBackground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="0" green="66" red="ff" type="rgb"/>
+                  <Color blue="ab" green="9f" red="3a" type="rgb"/>
                 </Property>
               </Properties>
             </Component>

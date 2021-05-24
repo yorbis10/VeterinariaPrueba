@@ -57,13 +57,13 @@ public class frmClientes extends javax.swing.JInternalFrame {
         txtBuscar.setBorder(javax.swing.BorderFactory.createCompoundBorder());
         txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
         txtBuscar.setToolTipText("Documento, Nombre, Apellido, Correo");
-        txtBuscar.setColorIcon(new java.awt.Color(255, 102, 0));
-        txtBuscar.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtBuscar.setColorIcon(new java.awt.Color(58, 159, 171));
+        txtBuscar.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtBuscar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtBuscar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
         txtBuscar.setPhColor(new java.awt.Color(0, 0, 0));
         txtBuscar.setPlaceholder("Buscar");
-        txtBuscar.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtBuscar.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtBuscar.setThemeTooltip(necesario.Global.THEMETOOLTIP.LIGHT);
 
         PanelDatos.setBackground(new java.awt.Color(255, 255, 255));
@@ -71,7 +71,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Documento", "Cedula De Ciudadania", "Tarjeta De Identidad", "Cedula De Extranjeria", "Pasaporte", "Nit" }));
         cmbTipoDocumento.setToolTipText("");
-        cmbTipoDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        cmbTipoDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         cmbTipoDocumento.setDoubleBuffered(true);
         cmbTipoDocumento.setEnabled(false);
         cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
@@ -79,12 +79,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
         txtDocumento.setToolTipText("");
-        txtDocumento.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtDocumento.setEnabled(false);
         txtDocumento.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtDocumento.setPhColor(new java.awt.Color(0, 0, 0));
         txtDocumento.setPlaceholder("Documento");
-        txtDocumento.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDocumento.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtDocumento.setThemeTooltip(null);
         txtDocumento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,12 +94,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtNombre.setForeground(new java.awt.Color(0, 0, 0));
         txtNombre.setToolTipText("");
-        txtNombre.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtNombre.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtNombre.setEnabled(false);
         txtNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtNombre.setPhColor(new java.awt.Color(0, 0, 0));
         txtNombre.setPlaceholder("Nombres");
-        txtNombre.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtNombre.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtNombre.setThemeTooltip(null);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,12 +109,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtApellido.setForeground(new java.awt.Color(0, 0, 0));
         txtApellido.setToolTipText("");
-        txtApellido.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtApellido.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtApellido.setEnabled(false);
         txtApellido.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtApellido.setPhColor(new java.awt.Color(0, 0, 0));
         txtApellido.setPlaceholder("Apellidos");
-        txtApellido.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtApellido.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtApellido.setThemeTooltip(null);
         txtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,12 +124,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtCorreo.setForeground(new java.awt.Color(0, 0, 0));
         txtCorreo.setToolTipText("");
-        txtCorreo.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtCorreo.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtCorreo.setEnabled(false);
         txtCorreo.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtCorreo.setPhColor(new java.awt.Color(0, 0, 0));
         txtCorreo.setPlaceholder("Correo");
-        txtCorreo.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtCorreo.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtCorreo.setThemeTooltip(null);
         txtCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,12 +139,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtDireccion.setForeground(new java.awt.Color(0, 0, 0));
         txtDireccion.setToolTipText("");
-        txtDireccion.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtDireccion.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtDireccion.setEnabled(false);
         txtDireccion.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtDireccion.setPhColor(new java.awt.Color(0, 0, 0));
         txtDireccion.setPlaceholder("Dirección");
-        txtDireccion.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtDireccion.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtDireccion.setThemeTooltip(null);
         txtDireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -154,12 +154,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtCiudad.setForeground(new java.awt.Color(0, 0, 0));
         txtCiudad.setToolTipText("");
-        txtCiudad.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtCiudad.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtCiudad.setEnabled(false);
         txtCiudad.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtCiudad.setPhColor(new java.awt.Color(0, 0, 0));
         txtCiudad.setPlaceholder("Ciudad");
-        txtCiudad.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtCiudad.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtCiudad.setThemeTooltip(null);
         txtCiudad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -169,12 +169,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         txtTelefono.setForeground(new java.awt.Color(0, 0, 0));
         txtTelefono.setToolTipText("");
-        txtTelefono.setColorMaterial(new java.awt.Color(255, 102, 0));
+        txtTelefono.setColorMaterial(new java.awt.Color(58, 159, 171));
         txtTelefono.setEnabled(false);
         txtTelefono.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtTelefono.setPhColor(new java.awt.Color(0, 0, 0));
         txtTelefono.setPlaceholder("Telefono");
-        txtTelefono.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtTelefono.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtTelefono.setThemeTooltip(null);
         txtTelefono.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -186,10 +186,10 @@ public class frmClientes extends javax.swing.JInternalFrame {
         txtObservacion.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         txtObservacion.setRows(5);
         txtObservacion.setToolTipText("");
-        txtObservacion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(255, 102, 0))); // NOI18N
+        txtObservacion.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "OBSERVACION", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 10), new java.awt.Color(58, 159, 171))); // NOI18N
         txtObservacion.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txtObservacion.setEnabled(false);
-        txtObservacion.setSelectionColor(new java.awt.Color(255, 102, 0));
+        txtObservacion.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane2.setViewportView(txtObservacion);
 
         javax.swing.GroupLayout PanelDatosLayout = new javax.swing.GroupLayout(PanelDatos);
@@ -326,15 +326,15 @@ public class frmClientes extends javax.swing.JInternalFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(255, 102, 0));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(58, 159, 171));
         rSTableMetroCustom1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         rSTableMetroCustom1.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(255, 102, 0));
+        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(58, 159, 171));
         jScrollPane1.setViewportView(rSTableMetroCustom1);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
