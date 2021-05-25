@@ -1,6 +1,7 @@
 //principal [58,159,171], secundario [64,177,190]
 package Vista;
 
+import Controlador.UsuariosControlador;
 import java.awt.*;
 import javax.swing.*;
 
@@ -11,6 +12,8 @@ public class frmPrincipal extends javax.swing.JFrame {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Recursos/icon.png")).getImage());
         // this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
+       // lblUsuario.setText("Usuario: "+UsuariosControlador.usuarioGlobal);
+        lblUsuario.setText(UsuariosControlador.usuarioGlobal);
     }
 
     @SuppressWarnings("unchecked")
@@ -29,7 +32,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         btnSalir = new RSMaterialComponent.RSButtonMaterialIconTwo();
         jpUser = new javax.swing.JPanel();
         btnCerrarSesion = new RSMaterialComponent.RSButtonMaterialIconTwo();
-        rSLabelTextIcon1 = new RSMaterialComponent.RSLabelTextIcon();
+        lblUsuario = new RSMaterialComponent.RSLabelTextIcon();
         int ale = (int) (Math.random()*8+1);
         ImageIcon icon = new ImageIcon(getClass().getResource("/Recursos/Principal/fondo"+ale+".jpg"));
         Image image = icon.getImage();
@@ -200,10 +203,11 @@ public class frmPrincipal extends javax.swing.JFrame {
             }
         });
 
-        rSLabelTextIcon1.setForeground(new java.awt.Color(255, 255, 255));
-        rSLabelTextIcon1.setText("Usuario: ");
-        rSLabelTextIcon1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        rSLabelTextIcon1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
+        lblUsuario.setForeground(new java.awt.Color(255, 255, 255));
+        lblUsuario.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblUsuario.setText("Usuario: ");
+        lblUsuario.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        lblUsuario.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.PEOPLE);
 
         javax.swing.GroupLayout jpUserLayout = new javax.swing.GroupLayout(jpUser);
         jpUser.setLayout(jpUserLayout);
@@ -211,8 +215,8 @@ public class frmPrincipal extends javax.swing.JFrame {
             jpUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpUserLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(rSLabelTextIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 621, Short.MAX_VALUE)
+                .addComponent(lblUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 382, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 439, Short.MAX_VALUE)
                 .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 159, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -220,10 +224,11 @@ public class frmPrincipal extends javax.swing.JFrame {
             jpUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jpUserLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jpUserLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(rSLabelTextIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(btnCerrarSesion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jpUserLayout.createSequentialGroup()
+                .addComponent(lblUsuario, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         getContentPane().add(jpUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 1000, 50));
@@ -244,7 +249,7 @@ public class frmPrincipal extends javax.swing.JFrame {
             .addGap(0, 648, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, 1000, 650));
+        getContentPane().add(jpPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 40, 1000, 650));
 
         setSize(new java.awt.Dimension(1326, 739));
         setLocationRelativeTo(null);
@@ -365,6 +370,6 @@ public class frmPrincipal extends javax.swing.JFrame {
     private javax.swing.JPanel jpUser;
     private javax.swing.JLabel lblImagen;
     private javax.swing.JLabel lblMenu;
-    private RSMaterialComponent.RSLabelTextIcon rSLabelTextIcon1;
+    private RSMaterialComponent.RSLabelTextIcon lblUsuario;
     // End of variables declaration//GEN-END:variables
 }
