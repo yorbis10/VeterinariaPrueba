@@ -123,6 +123,11 @@ public class frmLogin extends javax.swing.JFrame {
         txtUsuario.setPlaceholder("Usuario");
         txtUsuario.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtUsuario.setThemeTooltip(null);
+        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtUsuarioActionPerformed(evt);
+            }
+        });
 
         lblError.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         lblError.setForeground(new java.awt.Color(255, 0, 0));
@@ -238,6 +243,10 @@ public class frmLogin extends javax.swing.JFrame {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
        System.exit(0);
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
+        txtClave.requestFocus();
+    }//GEN-LAST:event_txtUsuarioActionPerformed
 
     
     /**
