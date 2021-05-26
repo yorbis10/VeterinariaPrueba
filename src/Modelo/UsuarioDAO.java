@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 
 public class UsuarioDAO {
 
-    public static final String LOGIN = "select * from tblUsuario where usuario =? and clave=?";
+    public static final String LOGIN = "select * from Login where Usuario =? and Clave=?";
 
     public String login(Usuarios usu) {
         //guarda la conexion a la bd
