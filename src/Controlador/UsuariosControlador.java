@@ -52,6 +52,14 @@ public class UsuariosControlador implements ActionListener, KeyListener {
             frmPrincipal fPrincipal = new frmPrincipal();
             fPrincipal.setVisible(true);
             fLogin.dispose();
+        } else if (fLogin.txtUsuario.getText().equals("")) {
+            fLogin.lblUsuarioVacio.setText("¡Usuario Vacio!");
+            fLogin.txtUsuario.requestFocus();
+            ocultarlblerror();
+        } else if (fLogin.txtClave.getText().equals("")) {
+            fLogin.lblClaveVacia.setText("¡Clave Vacia!");
+            fLogin.txtClave.requestFocus();
+            ocultarlblerror();
         } else {
             fLogin.lblError.setText("¡Usuario o clave incorrectos!");
             fLogin.txtUsuario.setText("");
@@ -63,11 +71,14 @@ public class UsuariosControlador implements ActionListener, KeyListener {
 
     // metodo para ocutar lbl del error login
     public void ocultarlblerror() {
-        int delay = 5000; //millisegundos
+        int delay = 5000; //milisegundos 100mm= 1seg
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                fLogin.lblError.setText("");;
+                fLogin.lblUsuarioVacio.setText(" ");
+                fLogin.lblClaveVacia.setText(" ");
+                fLogin.lblError.setText(" ");
+
             }
         };
         new Timer(delay, taskPerformer).start();
