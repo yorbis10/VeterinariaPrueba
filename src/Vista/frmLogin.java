@@ -105,7 +105,6 @@ public class frmLogin extends javax.swing.JFrame {
 
         lblUsuarioVacio.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         lblUsuarioVacio.setForeground(new java.awt.Color(255, 0, 0));
-        lblUsuarioVacio.setText("s");
 
         txtClave.setForeground(new java.awt.Color(0, 0, 0));
         txtClave.setColorIcon(new java.awt.Color(58, 159, 171));
