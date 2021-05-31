@@ -1,5 +1,9 @@
 package Vista;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
 import javax.swing.ImageIcon;
 
 public class frmAcerca extends javax.swing.JFrame {
@@ -13,13 +17,7 @@ public class frmAcerca extends javax.swing.JFrame {
         
         initComponents();
         botontransparente(); //metodo boton transparente
-       lbltexto.setText("<html>Product Version: NetBeans IDE 8.2 RC (Build 201609140952)<p> "
-               + "Updates: NetBeans IDE is updated to version NetBeans 8.2 Patch 2 <p>"
-               + "Java: 1.8.0_261; Java HotSpot(TM) 64-Bit Server VM 25.261-b12 <p>"
-               + "Runtime: Java(TM) SE Runtime Environment 1.8.0_261-b12 <p>"
-               + "System: Windows 10 version 10.0 running on amd64; Cp1252; es_CO (nb) <p>"
-               + "User directory: C:\\Users\\Yorbis\\NetBeans\\8.2rc <p>"
-               + "Cache directory: C:\\Users\\Yorbis\\NetBeans\\Cache\\8.2rc");
+       
     }
 
     /**
@@ -31,14 +29,87 @@ public class frmAcerca extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        panelfondo = new javax.swing.JPanel();
+        Yorbis = new javax.swing.JLabel();
+        Juan = new javax.swing.JLabel();
+        Daniel = new javax.swing.JLabel();
+        lblTexto1 = new javax.swing.JLabel();
+        lbVesion = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        btnServisoluciones = new javax.swing.JButton();
         btnSalir = new javax.swing.JButton();
-        lbltexto = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Acerca De");
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel2.setBackground(new java.awt.Color(58, 159, 171));
+
+        jLabel1.setFont(new java.awt.Font("Dialog", 1, 40)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/about.png"))); // NOI18N
+        jLabel1.setText("Mascotasoft");
+        jPanel2.add(jLabel1);
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, 110));
+
+        panelfondo.setBackground(new java.awt.Color(255, 255, 255));
+        panelfondo.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        Yorbis.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        Yorbis.setForeground(new java.awt.Color(58, 159, 171));
+        Yorbis.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Yorbis.setText("Yorbis Aragon Bedoya");
+        panelfondo.add(Yorbis, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 560, 30));
+
+        Juan.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        Juan.setForeground(new java.awt.Color(58, 159, 171));
+        Juan.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Juan.setText("Juan D Martinez");
+        panelfondo.add(Juan, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 560, 30));
+
+        Daniel.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
+        Daniel.setForeground(new java.awt.Color(58, 159, 171));
+        Daniel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Daniel.setText("Daniel Alvarez");
+        panelfondo.add(Daniel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 560, 30));
+
+        lblTexto1.setFont(new java.awt.Font("Dialog", 1, 25)); // NOI18N
+        lblTexto1.setForeground(new java.awt.Color(58, 159, 171));
+        lblTexto1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblTexto1.setText("Aplicacion de escritorio desarrollada por: ");
+        panelfondo.add(lblTexto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 550, 50));
+
+        lbVesion.setFont(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        lbVesion.setForeground(new java.awt.Color(58, 159, 171));
+        lbVesion.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lbVesion.setText("VERSION 1.0.0");
+        panelfondo.add(lbVesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 150, -1, -1));
+
+        getContentPane().add(panelfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 560, 170));
+
+        jPanel1.setBackground(new java.awt.Color(58, 159, 171));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnServisoluciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnServisoluciones.setForeground(new java.awt.Color(255, 255, 255));
+        btnServisoluciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Servisoluciones.png"))); // NOI18N
+        btnServisoluciones.setText("Servisoluciones TI");
+        btnServisoluciones.setToolTipText("<html> <head> <style> #contenedor{background:white;color:black; padding-left:10px;padding-right:10px;margin:0; padding-top:5px;padding-bottom:5px;} </style> </head> <body> <h4 id=\"contenedor\">Ir a facebook</h4> </body> </html>");
+        btnServisoluciones.setBorder(null);
+        btnServisoluciones.setContentAreaFilled(false);
+        btnServisoluciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnServisoluciones.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnServisoluciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnServisolucionesActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnServisoluciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
 
         btnSalir.setBackground(new java.awt.Color(255, 255, 255));
         btnSalir.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
@@ -49,11 +120,9 @@ public class frmAcerca extends javax.swing.JFrame {
                 btnSalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 260, 37, -1));
+        jPanel1.add(btnSalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 0, 37, -1));
 
-        lbltexto.setFont(new java.awt.Font("Dialog", 1, 36)); // NOI18N
-        lbltexto.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Acerca", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Dialog", 1, 18), new java.awt.Color(58, 159, 171))); // NOI18N
-        getContentPane().add(lbltexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 520, 260));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 560, 40));
 
         pack();
         setLocationRelativeTo(null);
@@ -62,6 +131,14 @@ public class frmAcerca extends javax.swing.JFrame {
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnSalirActionPerformed
+
+    private void btnServisolucionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServisolucionesActionPerformed
+        try {
+            Desktop.getDesktop().browse(new URI("https://servisolucionesti.com"));
+        } catch (IOException | URISyntaxException ex) {
+           
+        }
+    }//GEN-LAST:event_btnServisolucionesActionPerformed
 //metodo boton transparente
 
     public void botontransparente() {
@@ -109,7 +186,16 @@ public class frmAcerca extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Daniel;
+    private javax.swing.JLabel Juan;
+    private javax.swing.JLabel Yorbis;
     private javax.swing.JButton btnSalir;
-    private javax.swing.JLabel lbltexto;
+    private javax.swing.JButton btnServisoluciones;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbVesion;
+    private javax.swing.JLabel lblTexto1;
+    private javax.swing.JPanel panelfondo;
     // End of variables declaration//GEN-END:variables
 }
