@@ -571,7 +571,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
-    private RSMaterialComponent.RSTableMetroCustom TablaUsuario;
+    public RSMaterialComponent.RSTableMetroCustom TablaUsuario;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEliminar;
