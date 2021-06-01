@@ -95,11 +95,11 @@ public class frmAcerca extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(58, 159, 171));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        btnServisoluciones.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        btnServisoluciones.setFont(new java.awt.Font("Dialog", 1, 13)); // NOI18N
         btnServisoluciones.setForeground(new java.awt.Color(255, 255, 255));
         btnServisoluciones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Servisoluciones.png"))); // NOI18N
         btnServisoluciones.setText("Servisoluciones TI");
-        btnServisoluciones.setToolTipText("<html> <head> <style> #contenedor{background:white;color:black; padding-left:10px;padding-right:10px;margin:0; padding-top:5px;padding-bottom:5px;} </style> </head> <body> <h4 id=\"contenedor\">Ir a facebook</h4> </body> </html>");
+        btnServisoluciones.setToolTipText("<html> <head> <style> #contenedor{background:white;color:black; padding-left:10px;padding-right:10px;margin:0; padding-top:5px;padding-bottom:5px;} </style> </head> <body> <h4 id=\"contenedor\">www.servisolucionesti.com</h4> </body> </html>");
         btnServisoluciones.setBorder(null);
         btnServisoluciones.setContentAreaFilled(false);
         btnServisoluciones.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -109,7 +109,7 @@ public class frmAcerca extends javax.swing.JFrame {
                 btnServisolucionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnServisoluciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 40));
+        jPanel1.add(btnServisoluciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 160, 40));
 
         btnSalir.setBackground(new java.awt.Color(255, 255, 255));
         btnSalir.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
