@@ -33,7 +33,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
+        TablaUsuario = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -315,27 +315,28 @@ public class frmClientes extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        rSTableMetroCustom1.setModel(new javax.swing.table.DefaultTableModel(
+        TablaUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "Documento", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo"
             }
         ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        rSTableMetroCustom1.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(rSTableMetroCustom1);
+        TablaUsuario.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaUsuario.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaUsuario.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        TablaUsuario.setColorSecundaryText(new java.awt.Color(58, 159, 171));
+        TablaUsuario.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuario.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaUsuario.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuario.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuario.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaUsuario);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
@@ -406,7 +407,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         jMenu3.add(jSeparator2);
 
         jmenuacerca.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/info.png"))); // NOI18N
-        jmenuacerca.setText("Manual");
+        jmenuacerca.setText("Acerca");
         jmenuacerca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jmenuacercaActionPerformed(evt);
@@ -570,6 +571,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
+    private RSMaterialComponent.RSTableMetroCustom TablaUsuario;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEliminar;
@@ -587,7 +589,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
-    private RSMaterialComponent.RSTableMetroCustom rSTableMetroCustom1;
     private RSMaterialComponent.RSTextFieldMaterial txtApellido;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
     private RSMaterialComponent.RSTextFieldMaterial txtCiudad;
