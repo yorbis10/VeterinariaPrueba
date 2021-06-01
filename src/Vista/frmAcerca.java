@@ -45,6 +45,8 @@ public class frmAcerca extends javax.swing.JFrame {
         setTitle("Acerca De");
         setBackground(new java.awt.Color(255, 255, 255));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setUndecorated(true);
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(58, 159, 171));
@@ -109,7 +111,7 @@ public class frmAcerca extends javax.swing.JFrame {
                 btnServisolucionesActionPerformed(evt);
             }
         });
-        jPanel1.add(btnServisoluciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 160, 40));
+        jPanel1.add(btnServisoluciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 40));
 
         btnSalir.setBackground(new java.awt.Color(255, 255, 255));
         btnSalir.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
