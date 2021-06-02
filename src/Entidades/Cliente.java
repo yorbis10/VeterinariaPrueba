@@ -1,10 +1,7 @@
 
 package Entidades;
 
-/**
- *
- * @author user-->juan
- */
+
 public class Cliente {
     
     private int idCliente,Documento,Telefono;

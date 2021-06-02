@@ -1,10 +1,7 @@
 
 package Entidades;
 
-/**
- *
- * @author user-->juan
- */
+
 public class Medicamentos {
     
     private int idMedicamento,idUsuario,idCliente,idMascota;
