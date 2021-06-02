@@ -317,20 +317,16 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         TablaUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Documento", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo"
+                "Tpo", "Documento", "Nombres", "Apellidos", "Correo", "Direccion", "Ciudad", "Telefono"
             }
         ));
         TablaUsuario.setBackgoundHead(new java.awt.Color(58, 159, 171));
         TablaUsuario.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        TablaUsuario.setColorPrimaryText(new java.awt.Color(58, 159, 171));
-        TablaUsuario.setColorSecundaryText(new java.awt.Color(58, 159, 171));
+        TablaUsuario.setColorPrimaryText(new java.awt.Color(0, 0, 0));
+        TablaUsuario.setColorSecundaryText(new java.awt.Color(0, 0, 0));
         TablaUsuario.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         TablaUsuario.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         TablaUsuario.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
@@ -352,9 +348,9 @@ public class frmClientes extends javax.swing.JInternalFrame {
                         .addGroup(PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(PanelDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(PanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 4, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         PanelFondoLayout.setVerticalGroup(
             PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -368,9 +364,8 @@ public class frmClientes extends javax.swing.JInternalFrame {
                     .addGroup(PanelFondoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(PanelBotones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(14, 14, 14))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         getContentPane().add(PanelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 600));
