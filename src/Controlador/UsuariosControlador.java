@@ -56,7 +56,7 @@ public class UsuariosControlador implements ActionListener, KeyListener {
             fLogin.lblUsuarioVacio.setText("¡Usuario Vacio!");
             fLogin.txtUsuario.requestFocus();
             ocultarlblerror();
-        } else if (fLogin.txtClave.getText().equals("")) {
+        } else if (fLogin.txtClave.getPassword().length==0) { //fLogin.txtClave.getText().equals("") OBSOLETO YA NO SE USA
             fLogin.lblClaveVacia.setText("¡Clave Vacia!");
             fLogin.txtClave.requestFocus();
             ocultarlblerror();
