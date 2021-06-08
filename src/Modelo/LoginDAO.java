@@ -6,7 +6,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class UsuarioDAO {
+public class LoginDAO {
 
     public static final String LOGIN = "select * from Login where Usuario =? and Clave=?";
 

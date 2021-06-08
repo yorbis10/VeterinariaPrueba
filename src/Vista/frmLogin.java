@@ -1,6 +1,6 @@
 package Vista;
 
-import Controlador.UsuariosControlador;
+import Controlador.LoginControlador;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
@@ -273,7 +273,7 @@ public class frmLogin extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         frmLogin flogin = new frmLogin();
-        UsuariosControlador cLogin = new UsuariosControlador(flogin);
+        LoginControlador cLogin = new LoginControlador(flogin);
         flogin.setVisible(true);
         // poner foco en boton login
     }

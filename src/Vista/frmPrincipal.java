@@ -1,7 +1,8 @@
 //principal [58,159,171], secundario [64,177,190]
 package Vista;
 
-import Controlador.UsuariosControlador;
+import Controlador.ClientesControlador;
+import Controlador.LoginControlador;
 import java.awt.*;
 import javax.swing.*;
 
@@ -13,7 +14,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         this.setIconImage(new ImageIcon(getClass().getResource("/Recursos/icon.png")).getImage());
         // this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
         // lblUsuario.setText("Usuario: "+UsuariosControlador.usuarioGlobal);
-        lblUsuario.setText(UsuariosControlador.usuarioGlobal);
+        lblUsuario.setText(LoginControlador.usuarioGlobal);
     }
 
     @SuppressWarnings("unchecked")
@@ -270,18 +271,20 @@ public class frmPrincipal extends javax.swing.JFrame {
     }
 
     private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
+        frmClientes fCliente = new frmClientes();
         jpPrincipal.add(fCliente);
+        ClientesControlador Cliencont = new ClientesControlador(fCliente);
         ocultar();
-        fCliente.setVisible(true);
         fCliente.setLocation((jpPrincipal.getWidth() - fCliente.getWidth()) / 2, (jpPrincipal.getHeight() - fCliente.getHeight()) / 2);
+        fCliente.setVisible(true);
     }//GEN-LAST:event_btnClientesActionPerformed
 
     private void btnMedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicamentosActionPerformed
         frmMedicamentos fMedicamentos = new frmMedicamentos();
         ocultar();
         jpPrincipal.add(fMedicamentos);
-        fMedicamentos.setVisible(true);
         fMedicamentos.setLocation((jpPrincipal.getWidth() - fMedicamentos.getWidth()) / 2, (jpPrincipal.getHeight() - fMedicamentos.getHeight()) / 2);
+        fMedicamentos.setVisible(true);
     }//GEN-LAST:event_btnMedicamentosActionPerformed
 
     private void btnSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSalirActionPerformed
@@ -292,24 +295,24 @@ public class frmPrincipal extends javax.swing.JFrame {
         frmMascotas fMascotas = new frmMascotas();
         ocultar();
         jpPrincipal.add(fMascotas);
-        fMascotas.setVisible(true);
         fMascotas.setLocation((jpPrincipal.getWidth() - fMascotas.getWidth()) / 2, (jpPrincipal.getHeight() - fMascotas.getHeight()) / 2);
+        fMascotas.setVisible(true);
     }//GEN-LAST:event_btnMascotasActionPerformed
 
     private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
         frmConsulta fConsulta = new frmConsulta();
         ocultar();
         jpPrincipal.add(fConsulta);
-        fConsulta.setVisible(true);
         fConsulta.setLocation((jpPrincipal.getWidth() - fConsulta.getWidth()) / 2, (jpPrincipal.getHeight() - fConsulta.getHeight()) / 2);
+        fConsulta.setVisible(true);
     }//GEN-LAST:event_btnConsultaActionPerformed
 
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
         frmUsuario fUsuarios = new frmUsuario();
         ocultar();
         jpPrincipal.add(fUsuarios);
-        fUsuarios.setVisible(true);
         fUsuarios.setLocation((jpPrincipal.getWidth() - fUsuarios.getWidth()) / 2, (jpPrincipal.getHeight() - fUsuarios.getHeight()) / 2);
+        fUsuarios.setVisible(true);
     }//GEN-LAST:event_btnUsuarioActionPerformed
 
     private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed

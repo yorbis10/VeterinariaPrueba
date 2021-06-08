@@ -1,11 +1,37 @@
-
 package Entidades;
 
+public class Clientes {
 
-public class Cliente {
-    
-    private int idCliente,Documento,Telefono;
-    private String TipoDocumento,Nombre,Apellidos,Direccion,Ciudad,Correo,Tipo,Observacion;
+    private int idCliente, Documento, Telefono;
+    private String TipoDocumento, Nombre, Apellidos, Direccion, Ciudad, Correo, Observacion;
+
+    public Clientes() {
+    }
+
+    public Clientes(int idCliente, int Documento, int Telefono, String TipoDocumento, String Nombre, String Apellidos, String Direccion, String Ciudad, String Correo, String Observacion) {
+        this.idCliente = idCliente;
+        this.Documento = Documento;
+        this.Telefono = Telefono;
+        this.TipoDocumento = TipoDocumento;
+        this.Nombre = Nombre;
+        this.Apellidos = Apellidos;
+        this.Direccion = Direccion;
+        this.Ciudad = Ciudad;
+        this.Correo = Correo;
+        this.Observacion = Observacion;
+    }
+
+    public Clientes(int Documento, String TipoDocumento, String Nombre, String Apellidos, int Telefono, String Direccion, String Ciudad, String Correo, String Observacion) {
+        this.Documento = Documento;
+        this.Telefono = Telefono;
+        this.TipoDocumento = TipoDocumento;
+        this.Nombre = Nombre;
+        this.Apellidos = Apellidos;
+        this.Direccion = Direccion;
+        this.Ciudad = Ciudad;
+        this.Correo = Correo;
+        this.Observacion = Observacion;
+    }
 
     public int getIdCliente() {
         return idCliente;
@@ -79,14 +105,6 @@ public class Cliente {
         this.Correo = Correo;
     }
 
-    public String getTipo() {
-        return Tipo;
-    }
-
-    public void setTipo(String Tipo) {
-        this.Tipo = Tipo;
-    }
-
     public String getObservacion() {
         return Observacion;
     }
@@ -94,6 +112,5 @@ public class Cliente {
     public void setObservacion(String Observacion) {
         this.Observacion = Observacion;
     }
-    
-    
+
 }

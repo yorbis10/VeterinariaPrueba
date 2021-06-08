@@ -7,6 +7,21 @@ public class Mascota {
     private int idMascota,idCliente;
     private String TipoMascota,Raza,Nombre,Edad,Observacion;
 
+    public Mascota() {
+    }
+
+    public Mascota(int idMascota, int idCliente, String TipoMascota, String Raza, String Nombre, String Edad, String Observacion) {
+        this.idMascota = idMascota;
+        this.idCliente = idCliente;
+        this.TipoMascota = TipoMascota;
+        this.Raza = Raza;
+        this.Nombre = Nombre;
+        this.Edad = Edad;
+        this.Observacion = Observacion;
+    }
+    
+    
+
     public int getIdMascota() {
         return idMascota;
     }

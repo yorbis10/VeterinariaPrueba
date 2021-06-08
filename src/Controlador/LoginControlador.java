@@ -1,7 +1,7 @@
 package Controlador;
 
 import Entidades.Usuarios;
-import Modelo.UsuarioDAO;
+import Modelo.LoginDAO;
 import Vista.frmLogin;
 import Vista.frmPrincipal;
 import java.awt.event.ActionEvent;
@@ -11,15 +11,15 @@ import java.awt.event.KeyListener;
 import javax.swing.JOptionPane;
 import javax.swing.Timer;
 
-public class UsuariosControlador implements ActionListener, KeyListener {
+public class LoginControlador implements ActionListener, KeyListener {
 
-    UsuarioDAO lDao = new UsuarioDAO();
+    LoginDAO lDao = new LoginDAO();
     Usuarios usu;
     frmLogin fLogin = new frmLogin();
     public static String usuarioGlobal = "";
 
     //metodo constructor
-    public UsuariosControlador(frmLogin login) {
+    public LoginControlador(frmLogin login) {
         this.fLogin = login;
         this.fLogin.btnIngresar.addActionListener(this);
         this.fLogin.txtClave.addKeyListener(this);

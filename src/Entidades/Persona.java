@@ -7,6 +7,18 @@ public class Persona {
 
     public Persona() {
     }
+
+    public Persona(int idPersona, int Documento, int Telefono, String TipoDocumento, String Nombre, String Aplellidos, String Direccion, String Ciudad, String Correo) {
+        this.idPersona = idPersona;
+        this.Documento = Documento;
+        this.Telefono = Telefono;
+        this.TipoDocumento = TipoDocumento;
+        this.Nombre = Nombre;
+        this.Aplellidos = Aplellidos;
+        this.Direccion = Direccion;
+        this.Ciudad = Ciudad;
+        this.Correo = Correo;
+    }
     
     
 

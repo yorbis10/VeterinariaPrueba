@@ -9,6 +9,19 @@ public class Consulta {
     private Date Fecha;
     private String Sintomas,Diagnostico;
 
+    public Consulta() {
+    }
+
+    public Consulta(int idConsulta, int idMastoca, Date Fecha, String Sintomas, String Diagnostico) {
+        this.idConsulta = idConsulta;
+        this.idMastoca = idMastoca;
+        this.Fecha = Fecha;
+        this.Sintomas = Sintomas;
+        this.Diagnostico = Diagnostico;
+    }
+    
+    
+
     public int getIdConsulta() {
         return idConsulta;
     }

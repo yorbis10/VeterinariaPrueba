@@ -1,7 +1,6 @@
 //
 package Controlador;
 
-
-public class ClienteControlador {
+public class MascotaControlador {
     
 }

@@ -7,6 +7,19 @@ public class Medicamentos {
     private int idMedicamento,idUsuario,idCliente,idMascota;
     private String Medicamentos;
 
+    public Medicamentos() {
+    }
+
+    public Medicamentos(int idMedicamento, int idUsuario, int idCliente, int idMascota, String Medicamentos) {
+        this.idMedicamento = idMedicamento;
+        this.idUsuario = idUsuario;
+        this.idCliente = idCliente;
+        this.idMascota = idMascota;
+        this.Medicamentos = Medicamentos;
+    }
+
+    
+    
     public int getIdMedicamento() {
         return idMedicamento;
     }

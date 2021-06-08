@@ -33,7 +33,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TablaUsuario = new RSMaterialComponent.RSTableMetroCustom();
+        TablaUsuarios = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -315,24 +315,24 @@ public class frmClientes extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        TablaUsuario.setModel(new javax.swing.table.DefaultTableModel(
+        TablaUsuarios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null}
+
             },
             new String [] {
-                "Documento", "Tpo", "Nombres", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
+                "Documento", "Tpo", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
             }
         ));
-        TablaUsuario.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        TablaUsuario.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        TablaUsuario.setColorPrimaryText(new java.awt.Color(0, 0, 0));
-        TablaUsuario.setColorSecundaryText(new java.awt.Color(0, 0, 0));
-        TablaUsuario.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuario.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        TablaUsuario.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuario.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuario.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(TablaUsuario);
+        TablaUsuarios.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaUsuarios.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaUsuarios.setColorPrimaryText(new java.awt.Color(0, 0, 0));
+        TablaUsuarios.setColorSecundaryText(new java.awt.Color(0, 0, 0));
+        TablaUsuarios.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuarios.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaUsuarios.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuarios.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuarios.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaUsuarios);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
@@ -566,7 +566,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
-    public RSMaterialComponent.RSTableMetroCustom TablaUsuario;
+    public RSMaterialComponent.RSTableMetroCustom TablaUsuarios;
     public javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnEliminar;
