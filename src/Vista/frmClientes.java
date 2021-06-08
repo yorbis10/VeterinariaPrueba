@@ -69,7 +69,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         PanelDatos.setBackground(new java.awt.Color(255, 255, 255));
         PanelDatos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Documento", "Cedula De Ciudadania", "Tarjeta De Identidad", "Cedula De Extranjeria", "Pasaporte", "Nit" }));
+        cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Topo de Documento", "CC", "TI", "CE", "PA", "NI" }));
         cmbTipoDocumento.setToolTipText("");
         cmbTipoDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
         cmbTipoDocumento.setDoubleBuffered(true);

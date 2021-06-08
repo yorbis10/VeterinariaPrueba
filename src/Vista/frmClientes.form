@@ -280,12 +280,12 @@
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="6">
-                    <StringItem index="0" value="Tipo De Documento"/>
-                    <StringItem index="1" value="Cedula De Ciudadania"/>
-                    <StringItem index="2" value="Tarjeta De Identidad"/>
-                    <StringItem index="3" value="Cedula De Extranjeria"/>
-                    <StringItem index="4" value="Pasaporte"/>
-                    <StringItem index="5" value="Nit"/>
+                    <StringItem index="0" value="Topo de Documento"/>
+                    <StringItem index="1" value="CC"/>
+                    <StringItem index="2" value="TI"/>
+                    <StringItem index="3" value="CE"/>
+                    <StringItem index="4" value="PA"/>
+                    <StringItem index="5" value="NI"/>
                   </StringArray>
                 </Property>
                 <Property name="toolTipText" type="java.lang.String" value=""/>
