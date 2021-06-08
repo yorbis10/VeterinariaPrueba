@@ -4,6 +4,7 @@ import java.sql.*;
 
 public class Conexion {
 
+    //metodo para conectar a BD
     public static Connection getConexion() {
         Connection con = null;
 
@@ -16,14 +17,17 @@ public class Conexion {
 
             e.printStackTrace();
         }
-
+        
         return con;
 
     }
 
+    //mostrar si esta bien la conexion
 //    public static void main(String[] args) {
-//        System.out.println(Conexion.getConexion());
-//    }
+//    System.out.println(Conexion.getConexion());
+//     }
+    
+    //metodo para cerra la conecion a BD
     public static void cerrar(Connection con) {
         try {
             con.close();
