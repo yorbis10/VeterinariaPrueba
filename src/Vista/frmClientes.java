@@ -320,7 +320,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "Documento", "Tpo", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
+                "Documento", "Tipo", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
             }
         ));
         TablaUsuarios.setBackgoundHead(new java.awt.Color(58, 159, 171));
@@ -331,8 +331,19 @@ public class frmClientes extends javax.swing.JInternalFrame {
         TablaUsuarios.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
         TablaUsuarios.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
         TablaUsuarios.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaUsuarios.setPositionText(RSMaterialComponent.RSTableMetroCustom.POSITION_TEXT.LEFT);
         TablaUsuarios.setSelectionBackground(new java.awt.Color(58, 159, 171));
         jScrollPane1.setViewportView(TablaUsuarios);
+        if (TablaUsuarios.getColumnModel().getColumnCount() > 0) {
+            TablaUsuarios.getColumnModel().getColumn(0).setPreferredWidth(5);
+            TablaUsuarios.getColumnModel().getColumn(1).setPreferredWidth(2);
+            TablaUsuarios.getColumnModel().getColumn(2).setPreferredWidth(5);
+            TablaUsuarios.getColumnModel().getColumn(3).setPreferredWidth(5);
+            TablaUsuarios.getColumnModel().getColumn(4).setPreferredWidth(5);
+            TablaUsuarios.getColumnModel().getColumn(5).setPreferredWidth(7);
+            TablaUsuarios.getColumnModel().getColumn(6).setPreferredWidth(5);
+            TablaUsuarios.getColumnModel().getColumn(7).setPreferredWidth(7);
+        }
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
