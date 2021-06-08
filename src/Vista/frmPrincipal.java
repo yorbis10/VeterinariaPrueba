@@ -12,7 +12,7 @@ public class frmPrincipal extends javax.swing.JFrame {
         initComponents();
         this.setIconImage(new ImageIcon(getClass().getResource("/Recursos/icon.png")).getImage());
         // this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
-       // lblUsuario.setText("Usuario: "+UsuariosControlador.usuarioGlobal);
+        // lblUsuario.setText("Usuario: "+UsuariosControlador.usuarioGlobal);
         lblUsuario.setText(UsuariosControlador.usuarioGlobal);
     }
 
@@ -261,19 +261,25 @@ public class frmPrincipal extends javax.swing.JFrame {
     frmConsulta fConsulta = new frmConsulta();
     frmUsuario fUsuarios = new frmUsuario();
 
+    public void ocultar() {
+        fCliente.dispose();
+        fMascotas.dispose();
+        fConsulta.dispose();
+        fMedicamentos.dispose();
+        fUsuarios.dispose();
+    }
 
     private void btnClientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClientesActionPerformed
-        
-        jpPrincipal.add(fCliente);  
-         ocultar();
+        jpPrincipal.add(fCliente);
+        ocultar();
         fCliente.setVisible(true);
         fCliente.setLocation((jpPrincipal.getWidth() - fCliente.getWidth()) / 2, (jpPrincipal.getHeight() - fCliente.getHeight()) / 2);
     }//GEN-LAST:event_btnClientesActionPerformed
 
     private void btnMedicamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMedicamentosActionPerformed
-        
-        jpPrincipal.add(fMedicamentos);    
+        frmMedicamentos fMedicamentos = new frmMedicamentos();
         ocultar();
+        jpPrincipal.add(fMedicamentos);
         fMedicamentos.setVisible(true);
         fMedicamentos.setLocation((jpPrincipal.getWidth() - fMedicamentos.getWidth()) / 2, (jpPrincipal.getHeight() - fMedicamentos.getHeight()) / 2);
     }//GEN-LAST:event_btnMedicamentosActionPerformed
@@ -283,41 +289,32 @@ public class frmPrincipal extends javax.swing.JFrame {
     }//GEN-LAST:event_btnSalirActionPerformed
 
     private void btnMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMascotasActionPerformed
-        
-        jpPrincipal.add(fMascotas); 
+        frmMascotas fMascotas = new frmMascotas();
         ocultar();
+        jpPrincipal.add(fMascotas);
         fMascotas.setVisible(true);
         fMascotas.setLocation((jpPrincipal.getWidth() - fMascotas.getWidth()) / 2, (jpPrincipal.getHeight() - fMascotas.getHeight()) / 2);
     }//GEN-LAST:event_btnMascotasActionPerformed
 
     private void btnConsultaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConsultaActionPerformed
-       
-        jpPrincipal.add(fConsulta);     
-         ocultar();
+        frmConsulta fConsulta = new frmConsulta();
+        ocultar();
+        jpPrincipal.add(fConsulta);
         fConsulta.setVisible(true);
         fConsulta.setLocation((jpPrincipal.getWidth() - fConsulta.getWidth()) / 2, (jpPrincipal.getHeight() - fConsulta.getHeight()) / 2);
     }//GEN-LAST:event_btnConsultaActionPerformed
 
     private void btnUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuarioActionPerformed
-        
-        jpPrincipal.add(fUsuarios);  
+        frmUsuario fUsuarios = new frmUsuario();
         ocultar();
+        jpPrincipal.add(fUsuarios);
         fUsuarios.setVisible(true);
         fUsuarios.setLocation((jpPrincipal.getWidth() - fUsuarios.getWidth()) / 2, (jpPrincipal.getHeight() - fUsuarios.getHeight()) / 2);
     }//GEN-LAST:event_btnUsuarioActionPerformed
 
     private void btnCerrarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarSesionActionPerformed
-        // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_btnCerrarSesionActionPerformed
-
-    public void ocultar() {
-              
-        fCliente.dispose();
-        fMascotas.dispose();
-        fConsulta.dispose();
-        fMedicamentos.dispose();
-        fUsuarios.dispose();
-    }
 
     /**
      * @param args the command line arguments
