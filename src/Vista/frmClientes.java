@@ -317,10 +317,10 @@ public class frmClientes extends javax.swing.JInternalFrame {
 
         TablaUsuario.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Tpo", "Documento", "Nombres", "Apellidos", "Correo", "Direccion", "Ciudad", "Telefono"
+                "Documento", "Tpo", "Nombres", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
             }
         ));
         TablaUsuario.setBackgoundHead(new java.awt.Color(58, 159, 171));
@@ -567,12 +567,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
     public RSMaterialComponent.RSTableMetroCustom TablaUsuario;
-    private javax.swing.JButton btnActualizar;
+    public javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
-    private RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
+    public RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -584,14 +584,14 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
-    private RSMaterialComponent.RSTextFieldMaterial txtApellido;
-    private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
-    private RSMaterialComponent.RSTextFieldMaterial txtCiudad;
-    private RSMaterialComponent.RSTextFieldMaterial txtCorreo;
-    private RSMaterialComponent.RSTextFieldMaterial txtDireccion;
-    private RSMaterialComponent.RSTextFieldMaterial txtDocumento;
-    private RSMaterialComponent.RSTextFieldMaterial txtNombre;
-    private javax.swing.JTextArea txtObservacion;
-    private RSMaterialComponent.RSTextFieldMaterial txtTelefono;
+    public RSMaterialComponent.RSTextFieldMaterial txtApellido;
+    public RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
+    public RSMaterialComponent.RSTextFieldMaterial txtCiudad;
+    public RSMaterialComponent.RSTextFieldMaterial txtCorreo;
+    public RSMaterialComponent.RSTextFieldMaterial txtDireccion;
+    public RSMaterialComponent.RSTextFieldMaterial txtDocumento;
+    public RSMaterialComponent.RSTextFieldMaterial txtNombre;
+    public javax.swing.JTextArea txtObservacion;
+    public RSMaterialComponent.RSTextFieldMaterial txtTelefono;
     // End of variables declaration//GEN-END:variables
 }
