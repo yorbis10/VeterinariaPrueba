@@ -5,8 +5,19 @@ package Entidades;
 public class Login {
     
     private int idLogin,idUsuario;
-    private String Usuario,Clave,Rol;
+    private String Usuario,Clave;
 
+    public Login() {
+    }
+
+    public Login(int idLogin, int idUsuario, String Usuario, String Clave) {
+        this.idLogin = idLogin;
+        this.idUsuario = idUsuario;
+        this.Usuario = Usuario;
+        this.Clave = Clave;
+    }
+
+    
     public int getIdLogin() {
         return idLogin;
     }
@@ -37,14 +48,6 @@ public class Login {
 
     public void setClave(String Clave) {
         this.Clave = Clave;
-    }
-
-    public String getRol() {
-        return Rol;
-    }
-
-    public void setRol(String Rol) {
-        this.Rol = Rol;
     }
     
     
