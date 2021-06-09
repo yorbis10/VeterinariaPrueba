@@ -14,29 +14,39 @@ import javax.swing.table.DefaultTableModel;
 public class MascotaControlador implements ActionListener {
 
     MascotasDAO MascotasDAO = new MascotasDAO();
-        frmMascotas frmasc = new frmMascotas();
-        Mascota mas = new Mascota();
-        DefaultTableModel modelo = new DefaultTableModel();
-        
-        public MascotaControlador(frmMascotas fm){
-            this.frmasc=fm;
-            this.Listar(frmasc.TablaMascota);
+    frmMascotas frmasc = new frmMascotas();
+    Mascota mas = new Mascota();
+    DefaultTableModel modelo = new DefaultTableModel();
+
+    public MascotaControlador(frmMascotas fm) {
+        this.frmasc = fm;
+        this.Listar(frmasc.TablaMascota);
+    }
+
+    public void Listar(JTable tabla) {
+        modelo = (DefaultTableModel) tabla.getModel();
+
+        List<Mascota> lmascota = MascotasDAO.Listar();
+        for(int i=0;i<lmascota.size();i++){
+            Object[] obj={
+                lmascota.get(i).getIdMascota(),
+                lmascota.get(i).getNombreCliente(),
+                lmascota.get(i).getTipoMascota(),
+                lmascota.get(i).getRaza(),
+                lmascota.get(i).getNombre(),
+                lmascota.get(i).getEdad(),
+                lmascota.get(i).getObservacion()
+            };
+            modelo.addRow(obj);
+            //int idMascota,String NombreCliente,String TipoMascota,String Raza,String NombreMascota,String Edad,String Observacion
         }
         
-        public void Listar(JTable tabla){
-            modelo = (DefaultTableModel) tabla.getModel();
-            
-            
-            List<Mascota> lmascota = MascotasDAO.Listar();
-            
-           
-            
-            
-        }
-    
+
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
-        
+
     }
-    
+
 }
