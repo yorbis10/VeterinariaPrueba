@@ -322,7 +322,15 @@ public class frmClientes extends javax.swing.JInternalFrame {
             new String [] {
                 "Documento", "Tipo", "Nombre", "Apellidos", "Telefono", "Direccion", "Ciudad", "Correo", "Observacion"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false, false, false, true
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         TablaUsuarios.setBackgoundHead(new java.awt.Color(58, 159, 171));
         TablaUsuarios.setBackgoundHover(new java.awt.Color(58, 159, 171));
         TablaUsuarios.setColorPrimaryText(new java.awt.Color(0, 0, 0));

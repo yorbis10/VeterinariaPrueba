@@ -27,13 +27,13 @@ public class MascotaControlador implements ActionListener {
         modelo = (DefaultTableModel) tabla.getModel();
 
         List<Mascota> lmascota = MascotasDAO.Listar();
+        
         for(int i=0;i<lmascota.size();i++){
             Object[] obj={
-                lmascota.get(i).getIdMascota(),
-                lmascota.get(i).getNombreCliente(),
-                lmascota.get(i).getTipoMascota(),
-                lmascota.get(i).getRaza(),
+                lmascota.get(i).getDocumento(),
                 lmascota.get(i).getNombre(),
+                lmascota.get(i).getTipoMascota(),
+                lmascota.get(i).getRaza(),                
                 lmascota.get(i).getEdad(),
                 lmascota.get(i).getObservacion()
             };

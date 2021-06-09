@@ -261,7 +261,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
             },
             new String [] {
-                "idMascota", "idCliente", "TipoMascota", "Raza", "Nombre", "Edad", "Observacion"
+                "Documento", "Nombre", "Tipo Mascota", "Raza", "Edad", "Observacion"
             }
         ));
         TablaMascota.setBackgoundHead(new java.awt.Color(58, 159, 171));
@@ -484,12 +484,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
     public RSMaterialComponent.RSTableMetroCustom TablaMascota;
-    private javax.swing.JButton btnActualizar;
+    public javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
-    private javax.swing.JButton btnEliminar;
-    private javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnEliminar;
+    public javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
-    private RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
+    public RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
@@ -502,10 +502,10 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
-    private RSMaterialComponent.RSTextFieldMaterial txtDocumento;
-    private RSMaterialComponent.RSTextFieldMaterial txtEdad;
-    private RSMaterialComponent.RSTextFieldMaterial txtNombre;
-    private javax.swing.JTextArea txtObservacion;
-    private RSMaterialComponent.RSTextFieldMaterial txtRaza;
+    public RSMaterialComponent.RSTextFieldMaterial txtDocumento;
+    public RSMaterialComponent.RSTextFieldMaterial txtEdad;
+    public RSMaterialComponent.RSTextFieldMaterial txtNombre;
+    public javax.swing.JTextArea txtObservacion;
+    public RSMaterialComponent.RSTextFieldMaterial txtRaza;
     // End of variables declaration//GEN-END:variables
 }

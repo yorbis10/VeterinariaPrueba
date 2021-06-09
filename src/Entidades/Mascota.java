@@ -4,9 +4,9 @@ package Entidades;
 
 public class Mascota {
     
-    private int idMascota,idCliente;
+    private int idMascota,idCliente,documento;
     private String TipoMascota,Raza,Nombre,Edad,Observacion;
-    private String NombreCliente;
+   
 
     public Mascota() {
     }
@@ -20,26 +20,15 @@ public class Mascota {
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
-    
-    public Mascota(int idMascota,String NombreCliente,String TipoMascota,String Raza,String NombreMascota,String Edad,String Observacion){
-        this.idMascota=idMascota;
-        this.NombreCliente=NombreCliente;
-        this.TipoMascota=TipoMascota;
-        this.Raza=Raza;
-        this.Nombre=NombreMascota;
-        this.Edad=Edad;
-        this.Observacion=Observacion;
-    }
 
-    public String getNombreCliente() {
-        return NombreCliente;
+    public Mascota(int documento,String Nombre, String TipoMascota, String Raza,  String Edad, String Observacion) {
+        this.documento = documento;
+        this.TipoMascota = TipoMascota;
+        this.Raza = Raza;
+        this.Nombre = Nombre;
+        this.Edad = Edad;
+        this.Observacion = Observacion;
     }
-
-    public void setNombreCliente(String NombreCliente) {
-        this.NombreCliente = NombreCliente;
-    }
-    
-    
 
     public int getIdMascota() {
         return idMascota;
@@ -55,6 +44,14 @@ public class Mascota {
 
     public void setIdCliente(int idCliente) {
         this.idCliente = idCliente;
+    }
+
+    public int getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(int documento) {
+        this.documento = documento;
     }
 
     public String getTipoMascota() {
@@ -97,5 +94,11 @@ public class Mascota {
         this.Observacion = Observacion;
     }
     
+  
+   
+
+  
+    
+
     
 }
