@@ -12,7 +12,8 @@ public class Conexion {
 
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             con = DriverManager.getConnection("jdbc:sqlserver://localhost:1433;"
-                    + "database=Veterinaria;user=admin;password=admin");
+                    + "database=Veterinaria;user=admin;password=admi"
+                    + "n");
         } catch (Exception e) {
 
             e.printStackTrace();

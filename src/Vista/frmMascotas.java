@@ -30,7 +30,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
+        TablaMascota = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -256,27 +256,24 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        rSTableMetroCustom1.setModel(new javax.swing.table.DefaultTableModel(
+        TablaMascota.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+                "idMascota", "idCliente", "TipoMascota", "Raza", "Nombre", "Edad", "Observacion"
             }
         ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(58, 159, 171));
-        rSTableMetroCustom1.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        rSTableMetroCustom1.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        rSTableMetroCustom1.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(rSTableMetroCustom1);
+        TablaMascota.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaMascota.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaMascota.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        TablaMascota.setColorSecundaryText(new java.awt.Color(58, 159, 171));
+        TablaMascota.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaMascota.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaMascota.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaMascota.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaMascota.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaMascota);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
@@ -294,7 +291,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                             .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(PanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 4, Short.MAX_VALUE))))
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
         PanelFondoLayout.setVerticalGroup(
             PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -486,6 +483,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
+    public RSMaterialComponent.RSTableMetroCustom TablaMascota;
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnEliminar;
@@ -503,7 +501,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
-    private RSMaterialComponent.RSTableMetroCustom rSTableMetroCustom1;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
     private RSMaterialComponent.RSTextFieldMaterial txtDocumento;
     private RSMaterialComponent.RSTextFieldMaterial txtEdad;

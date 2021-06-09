@@ -6,6 +6,7 @@ public class Mascota {
     
     private int idMascota,idCliente;
     private String TipoMascota,Raza,Nombre,Edad,Observacion;
+    private String NombreCliente;
 
     public Mascota() {
     }
@@ -18,6 +19,24 @@ public class Mascota {
         this.Nombre = Nombre;
         this.Edad = Edad;
         this.Observacion = Observacion;
+    }
+    
+    public Mascota(int idMascota,String NombreCliente,String TipoMascota,String Raza,String NombreMascota,String Edad,String Observacion){
+        this.idMascota=idMascota;
+        this.NombreCliente=NombreCliente;
+        this.TipoMascota=TipoMascota;
+        this.Raza=Raza;
+        this.Nombre=NombreMascota;
+        this.Edad=Edad;
+        this.Observacion=Observacion;
+    }
+
+    public String getNombreCliente() {
+        return NombreCliente;
+    }
+
+    public void setNombreCliente(String NombreCliente) {
+        this.NombreCliente = NombreCliente;
     }
     
     
