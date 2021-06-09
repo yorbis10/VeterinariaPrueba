@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MascotasDAO {
 
-    public static final String LISTAR = "SELECT c.Documento ,m.Nombre,m.Tipo_mascota ,m.Raza ,m.Edad,m.Observacion FROM Mascota m,Cliente c WHERE c.Id_Cliente=m.Id_Cliente";
+    public static final String LISTAR = "SELECT c.Documento,m.Nombre,m.Tipo_mascota ,m.Raz,m.Edad,m.Observacion FROM Mascota m,Cliente c WHERE c.Id_Cliente=m.Id_Cliente";
 
     Connection con = null;
     PreparedStatement ps = null;
@@ -27,14 +27,14 @@ public class MascotasDAO {
             rs = ps.executeQuery();
             while (rs.next()) {
 
-                int NombreCliente = rs.getInt("Documento");
+                int Documento = rs.getInt("Documento");
                 String NombreMascota = rs.getString("Nombre");
                 String TipoMascota = rs.getString("Tipo_mascota");
-                String Raza = rs.getString("Raza");                
+                String Raza = rs.getString("Raza"); 
                 String Edad = rs.getString("Edad");
                 String Observacion = rs.getString("Observacion");
-                //int idMascota,String NombreCliente,String TipoMascota,String Raza,String NombreMascota,String Edad,String Observacion
-                masc = new Mascota(NombreCliente, Edad, TipoMascota, Raza, Edad, Observacion);
+                masc = new Mascota(Documento, TipoMascota, Raza,NombreMascota, Edad, Observacion);
+                //int documento,,String Nombre, String TipoMascota,String Raza,  String Edad, String Observacion
                 mascota.add(masc);
             }
         } catch (Exception e) {

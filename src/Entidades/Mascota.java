@@ -21,11 +21,11 @@ public class Mascota {
         this.Observacion = Observacion;
     }
 
-    public Mascota(int documento,String Nombre, String TipoMascota, String Raza,  String Edad, String Observacion) {
+    public Mascota(int documento,String Nombre, String TipoMascota,String Raza,  String Edad, String Observacion) {
         this.documento = documento;
+        this.Nombre = Nombre;
         this.TipoMascota = TipoMascota;
         this.Raza = Raza;
-        this.Nombre = Nombre;
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
