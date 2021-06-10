@@ -11,7 +11,7 @@ import java.util.List;
 public class ClientesDAO {
 
     public static final String LISTAR = "select Documento,Tipo_Documento,Nombre,Apellidos,Telefono,Direccion,Ciudad,Corrreo,Observacion  from Cliente";
-    public static final String INSERTAR = "insert into Cliente values (?,?,?,?)";
+    public static final String INSERTAR = "insert into Cliente values (?,?,?,?,?,?,?,?,?)";
     public static final String EDITAR = "update Cliente set Documento=?,Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Documento =?";
     public static final String ELIMINAR = " delete Cliente where Documento =?";
     
@@ -32,10 +32,8 @@ public class ClientesDAO {
         try {
             //conectar a la BD
             con = Conexion.getConexion();
-
             //preparamos la consulta
             ps = con.prepareStatement(LISTAR);
-
             // ejecutamos la consulta
             rs = ps.executeQuery();
 
@@ -68,7 +66,7 @@ public class ClientesDAO {
     }
     
     // metodo para insertar un  nuevo cliente
-    public int Insertar(Clientes tv) {
+    public int Insertar(Clientes clien) {
         int fila = 0;
         try {
             //conectar a la BD
@@ -76,12 +74,16 @@ public class ClientesDAO {
             //preparamos la consulta
             ps = con.prepareStatement(INSERTAR);
 
-            //parametros para pasar en los (?) de la consulta
-//            ps.setString(1, tv.getTipoDocumento());
-//            ps.setString(2, tv.getMarca());
-//            ps.setInt(3, tv.getPulgadas());
-//            ps.setInt(4, tv.getCodcategoria());
-
+        //parametros para pasar en los (?) de la consulta
+            ps.setInt(1, clien.getDocumento());
+            ps.setString(2, clien.getTipoDocumento());
+            ps.setString(3, clien.getNombre());
+            ps.setString(4, clien.getApellidos());
+            ps.setInt(5, clien.getTelefono());
+            ps.setString(6, clien.getDireccion());
+            ps.setString(7, clien.getCiudad());
+            ps.setString(8, clien.getCorreo());
+            ps.setString(9, clien.getObservacion());
             // ejecutamos la consulta
             fila = ps.executeUpdate();//cada que modifique una consulta, elimina, inserte o actualice
 
