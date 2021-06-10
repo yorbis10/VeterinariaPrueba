@@ -14,15 +14,29 @@ public class ClientesControlador implements ActionListener {
 
     ClientesDAO ClientesDAO = new ClientesDAO();
     frmClientes FClientes = new frmClientes();
-    Clientes clie = new Clientes();
+    Clientes clie; //Clientes clie = new Clientes();
     DefaultTableModel modelo = new DefaultTableModel();
 
     public ClientesControlador(frmClientes fClie) {
         this.FClientes = fClie;
         this.Listar(FClientes.TablaUsuarios);
-        //this.fClie.btnGuardar.addActionListener(this);
+        this.FClientes.btnGuardar.addActionListener(this);
     }
 
+    public void Limpiar() {
+        modelo.setRowCount(0);
+        FClientes.txtDocumento.setText("");
+        FClientes.cmbTipoDocumento.setSelectedIndex(0);
+        FClientes.txtNombre.setText("");
+        FClientes.txtApellido.setText("");
+        FClientes.txtTelefono.setText("");
+        FClientes.txtDireccion.setText("");
+        FClientes.txtCiudad.setText("");
+        FClientes.txtCorreo.setText("");
+        FClientes.txtObservacion.setText("");
+        FClientes.txtBuscar.requestFocus();
+    }
+    
     // metodo para mostrar los registro dela BD en la tabla de frm cliente
     public void Listar(JTable tabla) {
 
@@ -49,7 +63,7 @@ public class ClientesControlador implements ActionListener {
     public void Insertar() {
 
         int Documento = Integer.parseInt(FClientes.txtDocumento.getText());
-        String TipoDocumento = FClientes.cmbTipoDocumento.getSelectedItem().toString();         
+        String TipoDocumento = FClientes.cmbTipoDocumento.getSelectedItem().toString();
         String Nombre = FClientes.txtNombre.getText();
         String Apellidos = FClientes.txtApellido.getText();
         int Telefono = Integer.parseInt(FClientes.txtTelefono.getText());
@@ -58,20 +72,24 @@ public class ClientesControlador implements ActionListener {
         String Correo = FClientes.txtCorreo.getText();
         String Observacion = FClientes.txtObservacion.getText();
 
-        
-        Clien = new Clientes();
+        clie = new Clientes(Documento, TipoDocumento, Nombre, Apellidos, Telefono, Direccion, Ciudad, Correo, Observacion);
 
-        int fila = tvDAO.Insertar(tv);
+        int fila = ClientesDAO.Insertar(clie);
         if (fila == 1) {
-            JOptionPane.showMessageDialog(fTV, "producto registrado");
+            JOptionPane.showMessageDialog(FClientes, "Cliente registrado");
         } else {
-            JOptionPane.showMessageDialog(fTV, "el producto no se pudo registrar");
+            JOptionPane.showMessageDialog(FClientes, "el FClientes no se pudo registrar");
         }
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        if (e.getSource().equals(FClientes.btnGuardar)) {
+            this.Insertar();
+            this.Limpiar();
+            this.Listar(FClientes.TablaUsuarios);
 
+        }
     }
 
 }
