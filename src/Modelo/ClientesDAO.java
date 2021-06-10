@@ -12,9 +12,9 @@ public class ClientesDAO {
 
     public static final String LISTAR = "select Documento,Tipo_Documento,Nombre,Apellidos,Telefono,Direccion,Ciudad,Corrreo,Observacion  from Cliente";
     public static final String INSERTAR = "insert into Cliente values (?,?,?,?,?,?,?,?,?)";
-    public static final String EDITAR = "update Cliente set Documento=?,Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Documento =?";
+    public static final String EDITAR = "update Cliente set Documento=?, Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Documento =?";
     public static final String ELIMINAR = " delete Cliente where Documento =?";
-    
+
     //guarda la conexion a la bd
     Connection con = null;
     //preparar la consulta a la BD
@@ -64,7 +64,7 @@ public class ClientesDAO {
         return lCliente;
 
     }
-    
+
     // metodo para insertar un  nuevo cliente
     public int Insertar(Clientes clien) {
         int fila = 0;
@@ -74,7 +74,7 @@ public class ClientesDAO {
             //preparamos la consulta
             ps = con.prepareStatement(INSERTAR);
 
-        //parametros para pasar en los (?) de la consulta
+            //parametros para pasar en los (?) de la consulta
             ps.setInt(1, clien.getDocumento());
             ps.setString(2, clien.getTipoDocumento());
             ps.setString(3, clien.getNombre());
@@ -93,5 +93,60 @@ public class ClientesDAO {
         }
         return fila;
     }
+
+    //metodo para actualizar la info de la tabla frmtv
+    public int editar(Clientes clien) {
+        int fila = 0;
+
+        try {
+            //conectar a la BD
+            con = Conexion.getConexion();
+            //preparamos la consulta
+            ps = con.prepareStatement(EDITAR);
+
+            ps.setInt(1, clien.getDocumento()); // ojo sql documento
+            ps.setString(2, clien.getTipoDocumento());
+            ps.setString(3, clien.getNombre());
+            ps.setString(4, clien.getApellidos());
+            ps.setInt(5, clien.getTelefono());
+            ps.setString(6, clien.getDireccion());
+            ps.setString(7, clien.getCiudad());
+            ps.setString(8, clien.getCorreo());
+            ps.setString(9, clien.getObservacion());
+
+            fila = ps.executeUpdate();//cada que modifique una consulta, elimina, inserte o actualice
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.cerrar(con);
+        }
+        return fila;
+    }
+    
+    
+    //metodo para eliminar la info de la tabla frmtv
+    public int eliminar(Clientes clien) {
+        int fila = 0;
+
+        try {
+            //conectar a la BD
+            con = Conexion.getConexion();
+            //preparamos la consulta
+            ps = con.prepareStatement(ELIMINAR);
+
+            ps.setInt(1, clien.getDocumento());
+
+            fila = ps.executeUpdate();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.cerrar(con);
+        }
+        return fila;
+    }
+    
+    
 
 }
