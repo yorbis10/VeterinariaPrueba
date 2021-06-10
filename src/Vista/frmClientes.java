@@ -493,7 +493,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnEliminar.setEnabled(false);
         btnCancelar.setEnabled(false);
         txtBuscar.setEnabled(true);
-        limpiar();
+        habilitartexto();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
@@ -507,29 +507,14 @@ public class frmClientes extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        limpiar();
-        JOptionPane.showMessageDialog(null, "Cliente Agregado Correctamente");
+        habilitartexto();
         inhabilitar();
         btnNuevo.setEnabled(true);
         btnGuardar.setEnabled(false);
         btnCancelar.setEnabled(false);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
-    public void setiar() {
-        txtBuscar.setText("");
-        cmbTipoDocumento.setSelectedIndex(0);
-        txtDocumento.setText("");
-        txtNombre.setText("");
-        txtApellido.setText("");
-        txtCorreo.setText("");
-        txtDireccion.setText("");
-        txtCiudad.setText("");
-        txtTelefono.setText("");
-        txtObservacion.setText("");
-    }
-
-    public void limpiar() {
-        setiar();
+    public void habilitartexto() {
         //-----------
         cmbTipoDocumento.setEnabled(false);
         txtDocumento.setEnabled(false);
@@ -545,7 +530,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
     }
 
     public void habilitar() {
-        setiar();
+
         //-----------
         txtBuscar.setEnabled(false);
         cmbTipoDocumento.setEnabled(true);
@@ -564,7 +549,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
     }
 
     public void inhabilitar() {
-        setiar();
         //-----------
         txtBuscar.setEnabled(true);
         cmbTipoDocumento.setEnabled(false);
