@@ -20,7 +20,7 @@ public class Mascota {
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
-
+    //listar
     public Mascota(int documento,String Nombre, String TipoMascota,String Raza,  String Edad, String Observacion) {
         this.documento = documento;
         this.Nombre = Nombre;
@@ -29,6 +29,8 @@ public class Mascota {
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
+    //insert
+   
 
     public int getIdMascota() {
         return idMascota;
@@ -93,12 +95,5 @@ public class Mascota {
     public void setObservacion(String Observacion) {
         this.Observacion = Observacion;
     }
-    
-  
    
-
-  
-    
-
-    
 }
