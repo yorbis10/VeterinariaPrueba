@@ -1,5 +1,6 @@
 package Vista;
 
+import Entidades.Clientes;
 import javax.swing.JOptionPane;
 
 public class frmMascotas extends javax.swing.JInternalFrame {
@@ -17,12 +18,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtBuscar = new RSMaterialComponent.RSTextFieldMaterialIcon();
         PanelDatos = new javax.swing.JPanel();
         cmbTipoDocumento = new RSMaterialComponent.RSComboBoxMaterial();
-        txtDocumento = new RSMaterialComponent.RSTextFieldMaterial();
         txtNombre = new RSMaterialComponent.RSTextFieldMaterial();
         txtRaza = new RSMaterialComponent.RSTextFieldMaterial();
         txtEdad = new RSMaterialComponent.RSTextFieldMaterial();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtObservacion = new javax.swing.JTextArea();
+        txtDocumento = new javax.swing.JComboBox<>();
         PanelBotones = new javax.swing.JPanel();
         btnNuevo = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
@@ -30,7 +31,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TablaMascota = new RSMaterialComponent.RSTableMetroCustom();
+        TablaM = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -65,6 +66,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
         PanelDatos.setBackground(new java.awt.Color(255, 255, 255));
         PanelDatos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        PanelDatos.setToolTipText("");
 
         cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Mascota", "Perros", "Gatos", "Pájaros", "Peces", "Conejo", "Hámsters", "Tortuga", "Hurón", "Serpientes", "Iguanas", "Cerdo miniatura", "Otros" }));
         cmbTipoDocumento.setToolTipText("");
@@ -73,21 +75,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         cmbTipoDocumento.setEnabled(false);
         cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
         cmbTipoDocumento.setThemeTooltip(null);
-
-        txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
-        txtDocumento.setToolTipText("");
-        txtDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
-        txtDocumento.setEnabled(false);
-        txtDocumento.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        txtDocumento.setPhColor(new java.awt.Color(0, 0, 0));
-        txtDocumento.setPlaceholder("Documento");
-        txtDocumento.setSelectionColor(new java.awt.Color(58, 159, 171));
-        txtDocumento.setThemeTooltip(null);
-        txtDocumento.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtDocumentoActionPerformed(evt);
-            }
-        });
 
         txtNombre.setForeground(new java.awt.Color(0, 0, 0));
         txtNombre.setToolTipText("");
@@ -144,6 +131,8 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtObservacion.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane2.setViewportView(txtObservacion);
 
+        txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout PanelDatosLayout = new javax.swing.GroupLayout(PanelDatos);
         PanelDatos.setLayout(PanelDatosLayout);
         PanelDatosLayout.setHorizontalGroup(
@@ -158,23 +147,26 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                             .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
-                            .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(18, 18, 18)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 664, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
         PanelDatosLayout.setVerticalGroup(
             PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDatosLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+            .addGroup(PanelDatosLayout.createSequentialGroup()
+                .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PanelDatosLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtDocumento, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDatosLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -256,7 +248,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        TablaMascota.setModel(new javax.swing.table.DefaultTableModel(
+        TablaM.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -264,16 +256,16 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 "Documento", "Nombre", "Tipo Mascota", "Raza", "Edad", "Observacion"
             }
         ));
-        TablaMascota.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        TablaMascota.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        TablaMascota.setColorPrimaryText(new java.awt.Color(58, 159, 171));
-        TablaMascota.setColorSecundaryText(new java.awt.Color(58, 159, 171));
-        TablaMascota.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        TablaMascota.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(TablaMascota);
+        TablaM.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaM.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaM.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        TablaM.setColorSecundaryText(new java.awt.Color(58, 159, 171));
+        TablaM.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaM.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaM);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
@@ -296,15 +288,14 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         PanelFondoLayout.setVerticalGroup(
             PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PanelFondoLayout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(PanelFondoLayout.createSequentialGroup()
-                        .addGap(0, 9, Short.MAX_VALUE)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(PanelDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(PanelFondoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(PanelBotones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addComponent(PanelBotones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(14, 14, 14))
@@ -372,10 +363,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         abrir.setVisible(true);
     }//GEN-LAST:event_jmenuacercaActionPerformed
 
-    private void txtDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDocumentoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtDocumentoActionPerformed
-
     private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtNombreActionPerformed
@@ -429,7 +416,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     public void setiar() {
         txtBuscar.setText("");
         cmbTipoDocumento.setSelectedIndex(0);
-        txtDocumento.setText("");
+        txtDocumento.setSelectedIndex(0);
         txtNombre.setText("");
         txtRaza.setText("");
         txtEdad.setText("");
@@ -483,7 +470,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
-    public RSMaterialComponent.RSTableMetroCustom TablaMascota;
+    public RSMaterialComponent.RSTableMetroCustom TablaM;
     public javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnEliminar;
@@ -502,7 +489,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
-    public RSMaterialComponent.RSTextFieldMaterial txtDocumento;
+    public javax.swing.JComboBox<Clientes> txtDocumento;
     public RSMaterialComponent.RSTextFieldMaterial txtEdad;
     public RSMaterialComponent.RSTextFieldMaterial txtNombre;
     public javax.swing.JTextArea txtObservacion;

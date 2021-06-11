@@ -8,7 +8,8 @@ public class Clientes {
     public Clientes() {
     }
 
-    public Clientes(int Documento,String TipoDocumento,   String Nombre, String Apellidos, int Telefono,String Direccion, String Ciudad, String Correo, String Observacion,int idCliente) {
+    public Clientes(int Documento, String TipoDocumento, String Nombre, String Apellidos, int Telefono, String Direccion, String Ciudad, String Correo, String Observacion, int idCliente) {
+
         this.idCliente = idCliente;
         this.Documento = Documento;
         this.Telefono = Telefono;
@@ -31,6 +32,11 @@ public class Clientes {
         this.Ciudad = Ciudad;
         this.Correo = Correo;
         this.Observacion = Observacion;
+    }
+
+    //AGREGADO POR JUAN
+    public Clientes(String Nombre) {
+        this.Nombre = Nombre;
     }
 
     public int getIdCliente() {
@@ -111,6 +117,12 @@ public class Clientes {
 
     public void setObservacion(String Observacion) {
         this.Observacion = Observacion;
+    }
+
+    //juan
+    @Override
+    public String toString() {
+        return Nombre;
     }
 
 }
