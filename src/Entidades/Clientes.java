@@ -33,10 +33,11 @@ public class Clientes {
         this.Correo = Correo;
         this.Observacion = Observacion;
     }
+//AGREGADO POR JUAN
 
-    //AGREGADO POR JUAN
-    public Clientes(String Nombre) {
-        this.Nombre = Nombre;
+    public Clientes(int Doc, String Nom) {
+        this.idCliente = Doc;
+        this.Nombre = Nom;
     }
 
     public int getIdCliente() {

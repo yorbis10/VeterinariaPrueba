@@ -118,8 +118,6 @@ public class ClientesControlador implements ActionListener {
             this.Insertar();
             this.Limpiar();
             this.Listar(FClientes.TablaClientes);
-            
-
         }
 
         if (e.getSource().equals(FClientes.btnCancelar)) {
@@ -177,7 +175,7 @@ public class ClientesControlador implements ActionListener {
             FClientes.btnNuevo.setEnabled(true);
             FClientes.btnEliminar.setEnabled(true);
             FClientes.btnCancelar.setEnabled(false);
-            
+
         }
 
         if (e.getSource().equals(FClientes.btnEliminar)) {
