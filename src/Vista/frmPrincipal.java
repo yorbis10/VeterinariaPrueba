@@ -3,6 +3,7 @@ package Vista;
 
 import Controlador.ClientesControlador;
 import Controlador.LoginControlador;
+import Controlador.MascotaControlador;
 import java.awt.*;
 import javax.swing.*;
 
@@ -293,8 +294,9 @@ public class frmPrincipal extends javax.swing.JFrame {
 
     private void btnMascotasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMascotasActionPerformed
         frmMascotas fMascotas = new frmMascotas();
-        ocultar();
         jpPrincipal.add(fMascotas);
+        MascotaControlador mascota = new MascotaControlador(fMascotas);
+        ocultar();      
         fMascotas.setLocation((jpPrincipal.getWidth() - fMascotas.getWidth()) / 2, (jpPrincipal.getHeight() - fMascotas.getHeight()) / 2);
         fMascotas.setVisible(true);
     }//GEN-LAST:event_btnMascotasActionPerformed

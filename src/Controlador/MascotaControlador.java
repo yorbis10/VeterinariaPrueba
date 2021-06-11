@@ -20,7 +20,7 @@ public class MascotaControlador implements ActionListener {
 
     public MascotaControlador(frmMascotas fm) {
         this.frmasc = fm;
-        this.Listar(frmasc.TablaMascota);
+        this.Listar(frmasc.TablaM);
     }
 
     public void Listar(JTable tabla) {

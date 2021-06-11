@@ -10,7 +10,8 @@ import java.util.List;
 
 public class MascotasDAO {
 
-    public static final String LISTAR = "SELECT c.Documento,m.Nombre,m.Tipo_mascota ,m.Raz,m.Edad,m.Observacion FROM Mascota m,Cliente c WHERE c.Id_Cliente=m.Id_Cliente";
+    public static final String LISTAR = "SELECT c.Documento,m.Nombre,m.Tipo_mascota ,m.Raza,m.Edad,m.Observacion "
+            + "FROM Mascota m,Cliente c WHERE m.Id_Cliente=c.Id_Cliente";
 
     Connection con = null;
     PreparedStatement ps = null;
@@ -33,7 +34,7 @@ public class MascotasDAO {
                 String Raza = rs.getString("Raza"); 
                 String Edad = rs.getString("Edad");
                 String Observacion = rs.getString("Observacion");
-                masc = new Mascota(Documento, TipoMascota, Raza,NombreMascota, Edad, Observacion);
+                masc = new Mascota(Documento, NombreMascota, TipoMascota, Raza, Edad, Observacion);
                 //int documento,,String Nombre, String TipoMascota,String Raza,  String Edad, String Observacion
                 mascota.add(masc);
             }

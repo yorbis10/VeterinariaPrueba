@@ -30,7 +30,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TablaMascota = new RSMaterialComponent.RSTableMetroCustom();
+        TablaM = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -155,7 +155,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                            .addComponent(txtEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
@@ -256,7 +256,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        TablaMascota.setModel(new javax.swing.table.DefaultTableModel(
+        TablaM.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -264,16 +264,16 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 "Documento", "Nombre", "Tipo Mascota", "Raza", "Edad", "Observacion"
             }
         ));
-        TablaMascota.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        TablaMascota.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        TablaMascota.setColorPrimaryText(new java.awt.Color(58, 159, 171));
-        TablaMascota.setColorSecundaryText(new java.awt.Color(58, 159, 171));
-        TablaMascota.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        TablaMascota.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaMascota.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(TablaMascota);
+        TablaM.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaM.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaM.setColorPrimaryText(new java.awt.Color(58, 159, 171));
+        TablaM.setColorSecundaryText(new java.awt.Color(58, 159, 171));
+        TablaM.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaM.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaM.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaM);
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
         PanelFondo.setLayout(PanelFondoLayout);
@@ -483,7 +483,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
-    public RSMaterialComponent.RSTableMetroCustom TablaMascota;
+    public RSMaterialComponent.RSTableMetroCustom TablaM;
     public javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCancelar;
     public javax.swing.JButton btnEliminar;
