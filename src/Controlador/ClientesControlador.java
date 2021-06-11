@@ -28,7 +28,7 @@ public class ClientesControlador implements ActionListener {
     }
 
     public void Limpiar() {
-        modelo.setRowCount(0);
+
         FClientes.txtDocumento.setText("");
         FClientes.cmbTipoDocumento.setSelectedIndex(0);
         FClientes.txtNombre.setText("");
@@ -43,7 +43,7 @@ public class ClientesControlador implements ActionListener {
 
     // metodo para mostrar los registro dela BD en la tabla de frm cliente
     public void Listar(JTable tabla) {
-
+        modelo.setRowCount(0);
         modelo = (DefaultTableModel) tabla.getModel();
         List<Clientes> lclientes = ClientesDAO.Listar();
 
@@ -118,18 +118,21 @@ public class ClientesControlador implements ActionListener {
             this.Insertar();
             this.Limpiar();
             this.Listar(FClientes.TablaClientes);
+            
 
         }
 
         if (e.getSource().equals(FClientes.btnCancelar)) {
             this.Limpiar();
             this.Listar(FClientes.TablaClientes);
+            FClientes.btnEliminar.setVisible(true);
 
         }
 
         if (e.getSource().equals(FClientes.btnEditar)) {
             FClientes.btnEditar.setVisible(false);
             FClientes.btnActualizar.setVisible(true);
+            FClientes.btnEliminar.setEnabled(false);
             int fila = FClientes.TablaClientes.getSelectedRow();
 
             if (fila == -1) {
@@ -172,7 +175,9 @@ public class ClientesControlador implements ActionListener {
             FClientes.btnActualizar.setVisible(false);
             FClientes.btnEditar.setVisible(true);
             FClientes.btnNuevo.setEnabled(true);
+            FClientes.btnEliminar.setEnabled(true);
             FClientes.btnCancelar.setEnabled(false);
+            
         }
 
         if (e.getSource().equals(FClientes.btnEliminar)) {
@@ -186,8 +191,11 @@ public class ClientesControlador implements ActionListener {
                 int opc = JOptionPane.showConfirmDialog(FClientes, "Deseas eliminar el registro");
 
                 if (opc == 0) {
-                    String cod = (String) FClientes.TablaClientes.getValueAt(opc, 0);
-                    //clie.setCodigo(cod);
+
+                    int Docu = (int) FClientes.TablaClientes.getValueAt(fila, 0);
+                    clie = new Clientes();
+                    clie.setDocumento(Docu);
+
                     int f = ClientesDAO.eliminar(clie);
                     if (f == 1) {
                         JOptionPane.showMessageDialog(FClientes, "registro eliminado");
