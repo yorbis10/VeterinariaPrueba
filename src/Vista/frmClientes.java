@@ -290,7 +290,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/eliminar.png"))); // NOI18N
         btnEliminar.setText("Eliminar");
         btnEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEliminar.setEnabled(false);
         btnEliminar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnEliminar.setIconTextGap(6);
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -383,7 +382,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
                             .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(PanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 12, Short.MAX_VALUE))))
         );
         PanelFondoLayout.setVerticalGroup(
             PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -505,12 +504,13 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnGuardar.setEnabled(false);
         btnActualizar.setEnabled(false);
         btnEditar.setEnabled(true);
-        btnEliminar.setEnabled(false);
+        btnEliminar.setEnabled(true);
         btnCancelar.setEnabled(false);
         txtBuscar.setEnabled(true);
         habilitartexto();
         limpiar();
         btnEditar.setVisible(true);
+
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
@@ -535,7 +535,6 @@ public class frmClientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnActualizarActionPerformed
 
-    
     public void limpiar() {
         txtDocumento.setText("");
         cmbTipoDocumento.setSelectedIndex(0);
@@ -548,6 +547,7 @@ public class frmClientes extends javax.swing.JInternalFrame {
         txtObservacion.setText("");
         txtBuscar.requestFocus();
     }
+
     public void habilitartexto() {
         //-----------
         cmbTipoDocumento.setEnabled(false);
