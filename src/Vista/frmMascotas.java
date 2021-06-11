@@ -419,7 +419,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         limpiar();
-        JOptionPane.showMessageDialog(null, "Mascota Agregada Correctamente");
+        
         inhabilitar();
         btnNuevo.setEnabled(true);
         btnGuardar.setEnabled(false);

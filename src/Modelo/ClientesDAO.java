@@ -12,8 +12,8 @@ public class ClientesDAO {
 
     public static final String LISTAR = "select Documento,Tipo_Documento,Nombre,Apellidos,Telefono,Direccion,Ciudad,Corrreo,Observacion  from Cliente";
     public static final String INSERTAR = "insert into Cliente values (?,?,?,?,?,?,?,?,?)";
-    public static final String EDITAR = "update Cliente set Documento=?, Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Documento =?";
-    public static final String ELIMINAR = " delete Cliente where Documento =?";
+    public static final String EDITAR = "update Cliente set  Documento=?,Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Id_Cliente =?";
+    public static final String ELIMINAR = " delete Cliente where Id_Cliente =?";
 
     //guarda la conexion a la bd
     Connection con = null;
@@ -104,7 +104,8 @@ public class ClientesDAO {
             //preparamos la consulta
             ps = con.prepareStatement(EDITAR);
 
-            ps.setInt(1, clien.getDocumento()); // ojo sql documento
+            //recibir parametros
+            ps.setInt(1, clien.getDocumento());
             ps.setString(2, clien.getTipoDocumento());
             ps.setString(3, clien.getNombre());
             ps.setString(4, clien.getApellidos());
@@ -113,6 +114,7 @@ public class ClientesDAO {
             ps.setString(7, clien.getCiudad());
             ps.setString(8, clien.getCorreo());
             ps.setString(9, clien.getObservacion());
+            ps.setInt(10, clien.getIdCliente());
 
             fila = ps.executeUpdate();//cada que modifique una consulta, elimina, inserte o actualice
 
@@ -123,8 +125,7 @@ public class ClientesDAO {
         }
         return fila;
     }
-    
-    
+
     //metodo para eliminar la info de la tabla frmtv
     public int eliminar(Clientes clien) {
         int fila = 0;
@@ -135,7 +136,7 @@ public class ClientesDAO {
             //preparamos la consulta
             ps = con.prepareStatement(ELIMINAR);
 
-            ps.setInt(1, clien.getDocumento());
+            ps.setInt(1, clien.getIdCliente());
 
             fila = ps.executeUpdate();
 
@@ -146,7 +147,5 @@ public class ClientesDAO {
         }
         return fila;
     }
-    
-    
 
 }

@@ -8,7 +8,7 @@ public class Clientes {
     public Clientes() {
     }
 
-    public Clientes(int idCliente, int Documento, int Telefono, String TipoDocumento, String Nombre, String Apellidos, String Direccion, String Ciudad, String Correo, String Observacion) {
+    public Clientes(int Documento,String TipoDocumento,   String Nombre, String Apellidos, int Telefono,String Direccion, String Ciudad, String Correo, String Observacion,int idCliente) {
         this.idCliente = idCliente;
         this.Documento = Documento;
         this.Telefono = Telefono;

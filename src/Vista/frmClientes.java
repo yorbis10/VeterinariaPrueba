@@ -1,6 +1,5 @@
+// color :www.colorhexa.com/3aaba4
 package Vista;
-
-import javax.swing.JOptionPane;
 
 public class frmClientes extends javax.swing.JInternalFrame {
 
@@ -29,11 +28,12 @@ public class frmClientes extends javax.swing.JInternalFrame {
         PanelBotones = new javax.swing.JPanel();
         btnNuevo = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
-        btnActualizar = new javax.swing.JButton();
+        btnEditar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
+        btnActualizar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
-        TablaUsuarios = new RSMaterialComponent.RSTableMetroCustom();
+        TablaClientes = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuNuevo = new javax.swing.JMenuItem();
@@ -273,19 +273,18 @@ public class frmClientes extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 89, 247, 70));
 
-        btnActualizar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
-        btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/actualizar.png"))); // NOI18N
-        btnActualizar.setText("Actualizar");
-        btnActualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnActualizar.setEnabled(false);
-        btnActualizar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        btnActualizar.setIconTextGap(6);
-        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
+        btnEditar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
+        btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/editar.png"))); // NOI18N
+        btnEditar.setText("Editar");
+        btnEditar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnEditar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnEditar.setIconTextGap(6);
+        btnEditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnActualizarActionPerformed(evt);
+                btnEditarActionPerformed(evt);
             }
         });
-        PanelBotones.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 165, -1, 70));
+        PanelBotones.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 165, 247, 70));
 
         btnEliminar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/eliminar.png"))); // NOI18N
@@ -315,7 +314,21 @@ public class frmClientes extends javax.swing.JInternalFrame {
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
 
-        TablaUsuarios.setModel(new javax.swing.table.DefaultTableModel(
+        btnActualizar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
+        btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/actualizar.png"))); // NOI18N
+        btnActualizar.setText("Actualizar");
+        btnActualizar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnActualizar.setEnabled(false);
+        btnActualizar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnActualizar.setIconTextGap(6);
+        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActualizarActionPerformed(evt);
+            }
+        });
+        PanelBotones.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 165, -1, 70));
+
+        TablaClientes.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -331,26 +344,27 @@ public class frmClientes extends javax.swing.JInternalFrame {
                 return canEdit [columnIndex];
             }
         });
-        TablaUsuarios.setBackgoundHead(new java.awt.Color(58, 159, 171));
-        TablaUsuarios.setBackgoundHover(new java.awt.Color(58, 159, 171));
-        TablaUsuarios.setColorPrimaryText(new java.awt.Color(0, 0, 0));
-        TablaUsuarios.setColorSecundaryText(new java.awt.Color(0, 0, 0));
-        TablaUsuarios.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuarios.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
-        TablaUsuarios.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuarios.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
-        TablaUsuarios.setPositionText(RSMaterialComponent.RSTableMetroCustom.POSITION_TEXT.LEFT);
-        TablaUsuarios.setSelectionBackground(new java.awt.Color(58, 159, 171));
-        jScrollPane1.setViewportView(TablaUsuarios);
-        if (TablaUsuarios.getColumnModel().getColumnCount() > 0) {
-            TablaUsuarios.getColumnModel().getColumn(0).setPreferredWidth(5);
-            TablaUsuarios.getColumnModel().getColumn(1).setPreferredWidth(2);
-            TablaUsuarios.getColumnModel().getColumn(2).setPreferredWidth(5);
-            TablaUsuarios.getColumnModel().getColumn(3).setPreferredWidth(5);
-            TablaUsuarios.getColumnModel().getColumn(4).setPreferredWidth(5);
-            TablaUsuarios.getColumnModel().getColumn(5).setPreferredWidth(7);
-            TablaUsuarios.getColumnModel().getColumn(6).setPreferredWidth(5);
-            TablaUsuarios.getColumnModel().getColumn(7).setPreferredWidth(7);
+        TablaClientes.setBackgoundHead(new java.awt.Color(58, 159, 171));
+        TablaClientes.setBackgoundHover(new java.awt.Color(58, 159, 171));
+        TablaClientes.setColorPrimaryText(new java.awt.Color(0, 0, 0));
+        TablaClientes.setColorSecondary(new java.awt.Color(221, 243, 242));
+        TablaClientes.setColorSecundaryText(new java.awt.Color(0, 0, 0));
+        TablaClientes.setFont(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaClientes.setFontHead(new java.awt.Font("Dialog", 1, 12)); // NOI18N
+        TablaClientes.setFontRowHover(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaClientes.setFontRowSelect(new java.awt.Font("Dialog", 1, 11)); // NOI18N
+        TablaClientes.setPositionText(RSMaterialComponent.RSTableMetroCustom.POSITION_TEXT.LEFT);
+        TablaClientes.setSelectionBackground(new java.awt.Color(58, 159, 171));
+        jScrollPane1.setViewportView(TablaClientes);
+        if (TablaClientes.getColumnModel().getColumnCount() > 0) {
+            TablaClientes.getColumnModel().getColumn(0).setPreferredWidth(5);
+            TablaClientes.getColumnModel().getColumn(1).setPreferredWidth(2);
+            TablaClientes.getColumnModel().getColumn(2).setPreferredWidth(5);
+            TablaClientes.getColumnModel().getColumn(3).setPreferredWidth(5);
+            TablaClientes.getColumnModel().getColumn(4).setPreferredWidth(5);
+            TablaClientes.getColumnModel().getColumn(5).setPreferredWidth(7);
+            TablaClientes.getColumnModel().getColumn(6).setPreferredWidth(5);
+            TablaClientes.getColumnModel().getColumn(7).setPreferredWidth(7);
         }
 
         javax.swing.GroupLayout PanelFondoLayout = new javax.swing.GroupLayout(PanelFondo);
@@ -481,25 +495,28 @@ public class frmClientes extends javax.swing.JInternalFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnEliminarActionPerformed
 
-    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
+    private void btnEditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEditarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnActualizarActionPerformed
+    }//GEN-LAST:event_btnEditarActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
 
         btnNuevo.setEnabled(true);
         btnGuardar.setEnabled(false);
         btnActualizar.setEnabled(false);
+        btnEditar.setEnabled(true);
         btnEliminar.setEnabled(false);
         btnCancelar.setEnabled(false);
         txtBuscar.setEnabled(true);
         habilitartexto();
+        limpiar();
+        btnEditar.setVisible(true);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         btnNuevo.setEnabled(false);
         btnGuardar.setEnabled(true);
-        btnActualizar.setEnabled(false);
+        btnEditar.setEnabled(false);
         btnEliminar.setEnabled(false);
         btnCancelar.setEnabled(true);
 
@@ -514,6 +531,23 @@ public class frmClientes extends javax.swing.JInternalFrame {
         btnCancelar.setEnabled(false);
     }//GEN-LAST:event_btnGuardarActionPerformed
 
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnActualizarActionPerformed
+
+    
+    public void limpiar() {
+        txtDocumento.setText("");
+        cmbTipoDocumento.setSelectedIndex(0);
+        txtNombre.setText("");
+        txtApellido.setText("");
+        txtTelefono.setText("");
+        txtDireccion.setText("");
+        txtCiudad.setText("");
+        txtCorreo.setText("");
+        txtObservacion.setText("");
+        txtBuscar.requestFocus();
+    }
     public void habilitartexto() {
         //-----------
         cmbTipoDocumento.setEnabled(false);
@@ -569,12 +603,13 @@ public class frmClientes extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelBotones;
     private javax.swing.JPanel PanelDatos;
     private javax.swing.JPanel PanelFondo;
-    public RSMaterialComponent.RSTableMetroCustom TablaUsuarios;
+    public RSMaterialComponent.RSTableMetroCustom TablaClientes;
     public javax.swing.JButton btnActualizar;
-    private javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnEditar;
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnNuevo;
+    public javax.swing.JButton btnNuevo;
     public RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
