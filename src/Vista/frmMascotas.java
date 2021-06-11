@@ -1,5 +1,6 @@
 package Vista;
 
+import Controlador.MascotaControlador;
 import Entidades.Clientes;
 import javax.swing.JOptionPane;
 
@@ -17,7 +18,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         PanelFondo = new javax.swing.JPanel();
         txtBuscar = new RSMaterialComponent.RSTextFieldMaterialIcon();
         PanelDatos = new javax.swing.JPanel();
-        cmbTipoDocumento = new RSMaterialComponent.RSComboBoxMaterial();
+        cmbTipoMascota = new RSMaterialComponent.RSComboBoxMaterial();
         txtNombre = new RSMaterialComponent.RSTextFieldMaterial();
         txtRaza = new RSMaterialComponent.RSTextFieldMaterial();
         txtEdad = new RSMaterialComponent.RSTextFieldMaterial();
@@ -68,13 +69,13 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         PanelDatos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         PanelDatos.setToolTipText("");
 
-        cmbTipoDocumento.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Mascota", "Perros", "Gatos", "Pájaros", "Peces", "Conejo", "Hámsters", "Tortuga", "Hurón", "Serpientes", "Iguanas", "Cerdo miniatura", "Otros" }));
-        cmbTipoDocumento.setToolTipText("");
-        cmbTipoDocumento.setColorMaterial(new java.awt.Color(58, 159, 171));
-        cmbTipoDocumento.setDoubleBuffered(true);
-        cmbTipoDocumento.setEnabled(false);
-        cmbTipoDocumento.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
-        cmbTipoDocumento.setThemeTooltip(null);
+        cmbTipoMascota.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo De Mascota", "Perros", "Gatos", "Pájaros", "Peces", "Conejo", "Hámsters", "Tortuga", "Hurón", "Serpientes", "Iguanas", "Cerdo miniatura", "Otros" }));
+        cmbTipoMascota.setToolTipText("");
+        cmbTipoMascota.setColorMaterial(new java.awt.Color(58, 159, 171));
+        cmbTipoMascota.setDoubleBuffered(true);
+        cmbTipoMascota.setEnabled(false);
+        cmbTipoMascota.setFont(new java.awt.Font("Dialog", 1, 17)); // NOI18N
+        cmbTipoMascota.setThemeTooltip(null);
 
         txtNombre.setForeground(new java.awt.Color(0, 0, 0));
         txtNombre.setToolTipText("");
@@ -82,7 +83,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtNombre.setEnabled(false);
         txtNombre.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         txtNombre.setPhColor(new java.awt.Color(0, 0, 0));
-        txtNombre.setPlaceholder("Nombre");
+        txtNombre.setPlaceholder("Nombre Mascota");
         txtNombre.setSelectionColor(new java.awt.Color(58, 159, 171));
         txtNombre.setThemeTooltip(null);
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
@@ -131,8 +132,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtObservacion.setSelectionColor(new java.awt.Color(58, 159, 171));
         jScrollPane2.setViewportView(txtObservacion);
 
-        txtDocumento.setForeground(new java.awt.Color(0, 0, 0));
-
         javax.swing.GroupLayout PanelDatosLayout = new javax.swing.GroupLayout(PanelDatos);
         PanelDatos.setLayout(PanelDatosLayout);
         PanelDatosLayout.setHorizontalGroup(
@@ -146,7 +145,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                             .addGap(18, 18, 18)
                             .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
-                            .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbTipoMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -161,7 +160,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                     .addGroup(PanelDatosLayout.createSequentialGroup()
                         .addGap(14, 14, 14)
                         .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(cmbTipoDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbTipoMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtDocumento, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDatosLayout.createSequentialGroup()
                         .addContainerGap()
@@ -405,6 +404,10 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+       
+        MascotaControlador masco = new MascotaControlador(this);
+        masco.insertar();
+        
         limpiar();
         
         inhabilitar();
@@ -415,7 +418,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
     public void setiar() {
         txtBuscar.setText("");
-        cmbTipoDocumento.setSelectedIndex(0);
+        cmbTipoMascota.setSelectedIndex(0);
         txtDocumento.setSelectedIndex(0);
         txtNombre.setText("");
         txtRaza.setText("");
@@ -426,7 +429,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     public void limpiar() {
         setiar();
         //-----------
-        cmbTipoDocumento.setEnabled(false);
+        cmbTipoMascota.setEnabled(false);
         txtDocumento.setEnabled(false);
         txtNombre.setEnabled(false);
         txtRaza.setEnabled(false);
@@ -439,7 +442,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         setiar();
         //-----------
         txtBuscar.setEnabled(false);
-        cmbTipoDocumento.setEnabled(true);
+        cmbTipoMascota.setEnabled(true);
         txtDocumento.setEnabled(true);
         txtNombre.setEnabled(true);
         txtRaza.setEnabled(true);
@@ -447,7 +450,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtObservacion.setEnabled(true);
         //--------
 
-        cmbTipoDocumento.requestFocus();
+        cmbTipoMascota.requestFocus();
 
     }
 
@@ -455,7 +458,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         setiar();
         //-----------
         txtBuscar.setEnabled(true);
-        cmbTipoDocumento.setEnabled(false);
+        cmbTipoMascota.setEnabled(false);
         txtDocumento.setEnabled(false);
         txtNombre.setEnabled(false);
         txtRaza.setEnabled(false);
@@ -476,7 +479,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
-    public RSMaterialComponent.RSComboBoxMaterial cmbTipoDocumento;
+    public RSMaterialComponent.RSComboBoxMaterial cmbTipoMascota;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
