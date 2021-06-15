@@ -35,8 +35,8 @@ public class Clientes {
     }
 //AGREGADO POR JUAN
 
-    public Clientes(int Doc, String Nom) {
-        this.idCliente = Doc;
+    public Clientes(int idCliente, String Nom) {
+        this.idCliente=idCliente;
         this.Nombre = Nom;
     }
 

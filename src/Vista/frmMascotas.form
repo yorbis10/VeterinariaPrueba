@@ -225,7 +225,7 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <Component id="cmbTipoMascota" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                  <Component id="txtDocumento" min="-2" pref="200" max="-2" attributes="0"/>
+                                  <Component id="cmbNombreCliente" min="-2" pref="200" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="txtNombre" min="-2" pref="286" max="-2" attributes="0"/>
                               </Group>
@@ -244,7 +244,7 @@
                               <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Component id="cmbTipoMascota" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtDocumento" pref="46" max="32767" attributes="0"/>
+                                  <Component id="cmbNombreCliente" pref="46" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                           <Group type="102" alignment="1" attributes="0">
@@ -431,7 +431,7 @@
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JComboBox" name="txtDocumento">
+            <Component class="javax.swing.JComboBox" name="cmbNombreCliente">
               <Properties>
                 <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
                   <StringArray count="0"/>

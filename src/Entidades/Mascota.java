@@ -4,16 +4,19 @@ package Entidades;
 
 public class Mascota {
     
-    private int idMascota,idCliente,documento;
-    private String TipoMascota,Raza,Nombre,Edad,Observacion;
-   
+    private int idMascota,documento;
+    private String TipoMascota,Raza,Nombre,Edad,Observacion,NombreCliente;
+    private int idCliente;
 
     public Mascota() {
     }
+    
+    
 
-    public Mascota(int idMascota, int idCliente, String TipoMascota, String Raza, String Nombre, String Edad, String Observacion) {
+    public Mascota(int idMascota, String NombreCliente, String TipoMascota, String Raza, String Nombre, String Edad, String Observacion) {
         this.idMascota = idMascota;
-        this.idCliente = idCliente;
+        this.NombreCliente=NombreCliente;
+        //this.idCliente = idCliente;
         this.TipoMascota = TipoMascota;
         this.Raza = Raza;
         this.Nombre = Nombre;
@@ -30,6 +33,16 @@ public class Mascota {
         this.Observacion = Observacion;
     }
     //insert
+
+    public Mascota(String NombreCliente, String TipoMascota, String Raza, String Nombre, String Edad, String Observacion) {
+        this.NombreCliente=NombreCliente;
+        //this.idCliente = idCliente;
+        this.TipoMascota = TipoMascota;
+        this.Raza = Raza;
+        this.Nombre = Nombre;
+        this.Edad = Edad;
+        this.Observacion = Observacion;
+    }
    
 
     public int getIdMascota() {
@@ -95,5 +108,14 @@ public class Mascota {
     public void setObservacion(String Observacion) {
         this.Observacion = Observacion;
     }
+
+    public String getNombreCliente() {
+        return NombreCliente;
+    }
+
+    public void setNombreCliente(String NombreCliente) {
+        this.NombreCliente = NombreCliente;
+    }
+    
    
 }

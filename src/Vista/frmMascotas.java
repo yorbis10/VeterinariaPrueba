@@ -24,7 +24,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtEdad = new RSMaterialComponent.RSTextFieldMaterial();
         jScrollPane2 = new javax.swing.JScrollPane();
         txtObservacion = new javax.swing.JTextArea();
-        txtDocumento = new javax.swing.JComboBox<>();
+        cmbNombreCliente = new javax.swing.JComboBox<>();
         PanelBotones = new javax.swing.JPanel();
         btnNuevo = new javax.swing.JButton();
         btnGuardar = new javax.swing.JButton();
@@ -143,11 +143,11 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                            .addComponent(txtEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(cmbTipoMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(txtDocumento, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(cmbNombreCliente, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                             .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 286, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 664, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -161,7 +161,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                         .addGap(14, 14, 14)
                         .addGroup(PanelDatosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(cmbTipoMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtDocumento, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)))
+                            .addComponent(cmbNombreCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 46, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, PanelDatosLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -419,7 +419,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     public void setiar() {
         txtBuscar.setText("");
         cmbTipoMascota.setSelectedIndex(0);
-        txtDocumento.setSelectedIndex(0);
+        cmbNombreCliente.setSelectedIndex(0);
         txtNombre.setText("");
         txtRaza.setText("");
         txtEdad.setText("");
@@ -430,7 +430,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         setiar();
         //-----------
         cmbTipoMascota.setEnabled(false);
-        txtDocumento.setEnabled(false);
+        cmbNombreCliente.setEnabled(false);
         txtNombre.setEnabled(false);
         txtRaza.setEnabled(false);
         txtEdad.setEnabled(false);
@@ -443,7 +443,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         //-----------
         txtBuscar.setEnabled(false);
         cmbTipoMascota.setEnabled(true);
-        txtDocumento.setEnabled(true);
+        cmbNombreCliente.setEnabled(true);
         txtNombre.setEnabled(true);
         txtRaza.setEnabled(true);
         txtEdad.setEnabled(true);
@@ -459,7 +459,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         //-----------
         txtBuscar.setEnabled(true);
         cmbTipoMascota.setEnabled(false);
-        txtDocumento.setEnabled(false);
+        cmbNombreCliente.setEnabled(false);
         txtNombre.setEnabled(false);
         txtRaza.setEnabled(false);
         txtEdad.setEnabled(false);
@@ -479,6 +479,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
+    public javax.swing.JComboBox<Clientes> cmbNombreCliente;
     public RSMaterialComponent.RSComboBoxMaterial cmbTipoMascota;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
@@ -492,7 +493,6 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JMenuItem jmenuacerca;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
-    public javax.swing.JComboBox<Clientes> txtDocumento;
     public RSMaterialComponent.RSTextFieldMaterial txtEdad;
     public RSMaterialComponent.RSTextFieldMaterial txtNombre;
     public javax.swing.JTextArea txtObservacion;

@@ -23,7 +23,7 @@ public class MascotaControlador implements ActionListener {
 
     public MascotaControlador(frmMascotas fm) {
         this.frmasc = fm;
-        this.cargarcombo();
+        this.CargarCombo();
         this.Listar(frmasc.TablaM);
 
     }
@@ -31,7 +31,7 @@ public class MascotaControlador implements ActionListener {
     public void Limpiar() {
         modelo.setRowCount(0);
         frmasc.cmbTipoMascota.setSelectedIndex(0);
-        frmasc.txtDocumento.setSelectedIndex(0);
+        frmasc.cmbNombreCliente.setSelectedIndex(0);
         frmasc.txtNombre.setText("");
         frmasc.txtRaza.setText("");
         frmasc.txtEdad.setText("");
@@ -61,36 +61,44 @@ public class MascotaControlador implements ActionListener {
 
     /*-----*/
     //CARGAR COMBO
-    public void cargarcombo() {
-        this.MascotasDAO.cargar_clientes(frmasc.txtDocumento);
+    public void CargarCombo() {
+
+        this.MascotasDAO.cargarCleintes(frmasc.cmbNombreCliente);
+
     }
 
     /*-----------*/
+    
     public void insertar() {
 
+        
+            //int idCliente = Integer.parseInt(frmasc.txtDocumento.getSelectedItem().toString());  
+//        String NombreCliente = frmasc.cmbNombreCliente.getItemAt(frmasc.cmbNombreCliente.getSelectedIndex()).getNombre();
+        String NombreCliente = frmasc.cmbNombreCliente.getSelectedItem().toString();
         String TipoMascota = frmasc.cmbTipoMascota.getSelectedItem().toString();
-        //int idCliente = Integer.parseInt(frmasc.txtDocumento.getSelectedItem().toString());  
-        int idCliente = frmasc.txtDocumento.getItemAt(frmasc.txtDocumento.getSelectedIndex()).getDocumento();
-        String Nombre = frmasc.txtNombre.getText();
         String Raza = frmasc.txtRaza.getText();
+        String Nombre = frmasc.txtNombre.getText();
         String Edad = frmasc.txtEdad.getText();
         String Observacion = frmasc.txtObservacion.getText();
-        
-        mas = new Mascota(idCliente, Nombre, TipoMascota, Raza, Edad, Observacion);
-
+        mas = new Mascota(NombreCliente,TipoMascota,Raza,Nombre,Edad,Observacion);
         int fila = MascotasDAO.Insertar(mas);
         if (fila == 1) {
             JOptionPane.showMessageDialog(frmasc, "REGISTRO CORRECTAMENTE");
+            this.Limpiar();
+            this.Listar(frmasc.TablaM);
         } else {
             JOptionPane.showMessageDialog(frmasc, "NO ES POSIBLE INSERTAR");
         }
+        
+        
 
     }
+    
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource().equals(frmasc.btnGuardar)) {
-            //this.insertar();
+            this.insertar();
             this.Limpiar();
             this.Listar(frmasc.TablaM);
 
