@@ -43,6 +43,15 @@ public class Mascota {
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
+
+    public Mascota(String TipoMascota, String Raza, String Nombre, String Edad, String Observacion, int idCliente) {
+       this.TipoMascota = TipoMascota;
+        this.Raza = Raza;
+        this.Nombre = Nombre;
+        this.Edad = Edad;
+        this.Observacion = Observacion;
+        this.idCliente = idCliente;
+    }
    
 
     public int getIdMascota() {

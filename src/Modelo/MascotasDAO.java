@@ -17,12 +17,13 @@ public class MascotasDAO {
             + "FROM Mascota m,Cliente c WHERE m.Id_Cliente=c.Id_Cliente";
 
     //public static final String INSERTAR = "INSERT INTO Mascota VALUES(?,?,?,?,?,?)";
-      
-    public static final String INSERTAR="INSERT INTO Mascota([id_Cliente],[Tipo_mascota],[Raza],[Nombre],[Edad],[Observacion])\n" +
-                "VALUES((SELECT Id_Cliente FROM Cliente WHERE Nombre=?),?,?,?,?,?)";
-    
-    public static final String EDITAR = "UPDATE Mascota "
-            + "SET id_Cliente=?,Tipo_mascota=?,Raza=?,Nombre=?,Edad=?,Observacion=? WHERE id_Mascota=?";
+    public static final String INSERTAR = "INSERT INTO Mascota([id_Cliente],[Tipo_mascota],[Raza],[Nombre],[Edad],[Observacion])\n"
+            + "VALUES((SELECT Id_Cliente FROM Cliente WHERE Nombre=?),?,?,?,?,?)";
+
+//    public static final String EDITAR = "UPDATE Mascota "
+//            + "SET id_Cliente=?,Raza=?,Nombre=?,Edad=?,Observacion=? WHERE Tipo_mascota=?";
+    public static final String EDITAR = "UPDATE Mascota SET Tipo_mascota=?,\n"
+            + "Raza=?,Nombre=?,Edad=?,Observacion=? WHERE id_Cliente=?";
 
     public static final String ELIMINAR = "DELETE FROM Mascota WHERE id_Mascota=?";
 
@@ -61,7 +62,6 @@ public class MascotasDAO {
         return mascota;
     }
 
-    
     public int Insertar(Mascota mascot) {
 
         int fila = 0;
@@ -91,27 +91,6 @@ public class MascotasDAO {
         return fila;
 
     }
-    
-    
-    //NUEVO COD
-//    public void insertar_mascota(Mascota masco) throws Exception{
-//        try {
-//            con=Conexion.getConexion();
-//            ps=con.prepareStatement(INSERTAR);
-//            ps.setString(1, masco.getNombreCliente());
-//            ps.setString(2, masco.getTipoMascota());
-//            ps.setString(3, masco.getRaza());
-//            ps.setString(4, masco.getNombre());
-//            ps.setString(5, masco.getEdad());
-//            ps.setString(6, masco.getObservacion());
-//            ps.executeUpdate();
-//            
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }finally{
-//            Conexion.cerrar(con);
-//        }
-//    }
 
     //COMBO
     public void cargarCleintes(JComboBox<Clientes> lClientes) {
@@ -142,5 +121,43 @@ public class MascotasDAO {
 
     }
 
-    //
+    /*----*/
+    //EDITAR
+    public int editar(Mascota mascot) {
+        int fila = 0;
+        try {
+            con = Conexion.getConexion();
+            ps = con.prepareStatement(EDITAR);
+            ps.setString(1, mascot.getTipoMascota());
+            ps.setString(2, mascot.getRaza());
+            ps.setString(3, mascot.getNombre());
+            ps.setString(4, mascot.getEdad());
+            ps.setString(5, mascot.getObservacion());
+            ps.setInt(6, mascot.getIdCliente());
+            fila = ps.executeUpdate();
+           
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.cerrar(con);
+        }
+        return fila;
+    }
+
+    /*-----*/
+    //ELIMINAR
+    public int eliminar(Mascota mascot) {
+        int fila = 0;
+        try {
+            con = Conexion.getConexion();
+            ps = con.prepareStatement(ELIMINAR);
+            ps.setInt(1, mascot.getIdCliente());
+            fila = ps.executeUpdate();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            Conexion.cerrar(con);
+        }
+        return fila;
+    }
 }

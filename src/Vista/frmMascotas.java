@@ -31,6 +31,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         btnActualizar = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
+        btnEditar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         TablaM = new RSMaterialComponent.RSTableMetroCustom();
         jMenuBar1 = new javax.swing.JMenuBar();
@@ -143,7 +144,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(txtRaza, javax.swing.GroupLayout.PREFERRED_SIZE, 398, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
-                            .addComponent(txtEdad, javax.swing.GroupLayout.DEFAULT_SIZE, 1, Short.MAX_VALUE))
+                            .addComponent(txtEdad, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, PanelDatosLayout.createSequentialGroup()
                             .addComponent(cmbTipoMascota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -217,13 +218,12 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 btnActualizarActionPerformed(evt);
             }
         });
-        PanelBotones.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 165, -1, 70));
+        PanelBotones.add(btnActualizar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, -1, 70));
 
         btnEliminar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         btnEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/eliminar.png"))); // NOI18N
         btnEliminar.setText("Eliminar");
         btnEliminar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        btnEliminar.setEnabled(false);
         btnEliminar.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         btnEliminar.setIconTextGap(6);
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
@@ -246,6 +246,10 @@ public class frmMascotas extends javax.swing.JInternalFrame {
             }
         });
         PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
+
+        btnEditar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
+        btnEditar.setText("Editar");
+        PanelBotones.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 230, 60));
 
         TablaM.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -390,12 +394,15 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         btnEliminar.setEnabled(false);
         btnCancelar.setEnabled(false);
         txtBuscar.setEnabled(true);
+        habilitartexto();
         limpiar();
+        btnEditar.setVisible(true);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
         btnNuevo.setEnabled(false);
         btnGuardar.setEnabled(true);
+        btnEditar.setEnabled(false);
         btnActualizar.setEnabled(false);
         btnEliminar.setEnabled(false);
         btnCancelar.setEnabled(true);
@@ -408,8 +415,8 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         MascotaControlador masco = new MascotaControlador(this);
         masco.insertar();
         
-        limpiar();
-        
+        habilitartexto();
+        limpiar();  
         inhabilitar();
         btnNuevo.setEnabled(true);
         btnGuardar.setEnabled(false);
@@ -436,6 +443,18 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         txtEdad.setEnabled(false);
         txtObservacion.setEnabled(false);
         txtBuscar.requestFocus();
+    }
+    public void habilitartexto() {
+        //-----------
+        cmbTipoMascota.setEnabled(false);
+        cmbNombreCliente.setEnabled(false);
+        txtNombre.setEnabled(false);
+        txtNombre.setEnabled(false);
+        txtRaza.setEnabled(false);
+        txtEdad.setEnabled(false);
+        txtObservacion.setEnabled(false);
+        txtBuscar.requestFocus();
+        
     }
 
     public void habilitar() {
@@ -475,7 +494,8 @@ public class frmMascotas extends javax.swing.JInternalFrame {
     private javax.swing.JPanel PanelFondo;
     public RSMaterialComponent.RSTableMetroCustom TablaM;
     public javax.swing.JButton btnActualizar;
-    private javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnCancelar;
+    public javax.swing.JButton btnEditar;
     public javax.swing.JButton btnEliminar;
     public javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnNuevo;
