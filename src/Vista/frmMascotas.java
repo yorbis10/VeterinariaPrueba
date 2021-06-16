@@ -49,7 +49,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
         setTitle("Formulario Mascotas");
         setToolTipText("");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1000, 650));
+        setPreferredSize(new java.awt.Dimension(1000, 660));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         PanelFondo.setBackground(new java.awt.Color(255, 255, 255));
@@ -231,7 +231,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 btnEliminarActionPerformed(evt);
             }
         });
-        PanelBotones.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 241, 247, 70));
+        PanelBotones.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 250, 247, 70));
 
         btnCancelar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Recursos/Clientes/cancelar.png"))); // NOI18N
@@ -245,11 +245,11 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 btnCancelarActionPerformed(evt);
             }
         });
-        PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 317, 247, 70));
+        PanelBotones.add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 330, 247, 70));
 
         btnEditar.setFont(new java.awt.Font("Dialog", 1, 34)); // NOI18N
         btnEditar.setText("Editar");
-        PanelBotones.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 230, 60));
+        PanelBotones.add(btnEditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 170, 250, 70));
 
         TablaM.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -286,7 +286,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                             .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(PanelBotones, javax.swing.GroupLayout.PREFERRED_SIZE, 270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                        .addGap(0, 6, Short.MAX_VALUE))))
         );
         PanelFondoLayout.setVerticalGroup(
             PanelFondoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -304,7 +304,7 @@ public class frmMascotas extends javax.swing.JInternalFrame {
                 .addGap(14, 14, 14))
         );
 
-        getContentPane().add(PanelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 990, 600));
+        getContentPane().add(PanelFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 600));
 
         jMenu1.setText("Menu");
 
