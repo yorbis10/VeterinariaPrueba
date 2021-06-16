@@ -412,8 +412,8 @@ public class frmMascotas extends javax.swing.JInternalFrame {
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
        
-        MascotaControlador masco = new MascotaControlador(this);
-        masco.insertar();
+       // MascotaControlador masco = new MascotaControlador(this);
+        //masco.insertar();
         
         habilitartexto();
         limpiar();  
