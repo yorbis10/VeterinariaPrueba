@@ -87,7 +87,7 @@ public class MascotaControlador implements ActionListener {
         mas = new Mascota(NombreCliente, TipoMascota, Raza, Nombre, Edad, Observacion);
         int fila = MascotasDAO.Insertar(mas);
         if (fila == 1) {
-            JOptionPane.showMessageDialog(frmasc, "REGISTRO CORRECTAMENTE");
+            JOptionPane.showMessageDialog(frmasc, "REGISTRO CORRECTAMENTE 11");
             this.Limpiar();
             this.Listar(frmasc.TablaM);
         } else {
@@ -104,8 +104,8 @@ public class MascotaControlador implements ActionListener {
         String Nombre = frmasc.txtNombre.getText();
         String Edad = frmasc.txtEdad.getText();
         String Observacion = frmasc.txtObservacion.getText();
-        int idCliente=frmasc.cmbNombreCliente.getItemAt(frmasc.cmbNombreCliente.getSelectedIndex()).getNombreCliente();
-        mas = new Mascota(TipoMascota, Raza,Nombre ,Edad ,Observacion ,idCliente);
+        int idCliente = frmasc.cmbNombreCliente.getItemAt(frmasc.cmbNombreCliente.getSelectedIndex()).getDocumento();
+        mas = new Mascota(TipoMascota, Raza, Nombre, Edad, Observacion, idCliente);
         //id_Cliente=?,Raza=?,Nombre=?,Edad=?,Observacion=? WHERE Tipo_mascota=?
         int fila = MascotasDAO.editar(mas);
         if (fila == 1) {
@@ -132,39 +132,39 @@ public class MascotaControlador implements ActionListener {
             if (fila == -1) {
                 JOptionPane.showMessageDialog(frmasc, "DEBES SELECCIONAR UN REGISTRO");
             } else {
-                frmasc.cmbNombreCliente.setSelectedItem((String) frmasc.TablaM.getValueAt(fila, 0));
-                frmasc.cmbTipoMascota.setSelectedItem((String) frmasc.TablaM.getValueAt(fila, 1));
-                frmasc.txtRaza.setText(frmasc.TablaM.getValueAt(fila, 2).toString());
-                frmasc.txtNombre.setText(frmasc.TablaM.getValueAt(fila, 3).toString());
-                frmasc.txtEdad.setText(frmasc.TablaM.getValueAt(fila, 4).toString());
-                frmasc.txtObservacion.setText((String) frmasc.TablaM.getValueAt(fila, 5));
+                frmasc.cmbTipoMascota.setSelectedItem((String) frmasc.TablaM.getValueAt(fila, 0));
+                frmasc.txtRaza.setText(frmasc.TablaM.getValueAt(fila, 1).toString());
+                frmasc.txtNombre.setText(frmasc.TablaM.getValueAt(fila, 2).toString());
+                frmasc.txtEdad.setText(frmasc.TablaM.getValueAt(fila, 3).toString());
+                frmasc.txtObservacion.setText((String) frmasc.TablaM.getValueAt(fila, 4));
+                frmasc.cmbNombreCliente.setSelectedItem((String) frmasc.TablaM.getValueAt(fila, 5));
 
             }
         }
-        
-        if(e.getSource().equals(frmasc.btnActualizar)){
+
+        if (e.getSource().equals(frmasc.btnActualizar)) {
             editar();
-             this.Limpiar();
-             this.Listar(frmasc.TablaM);
-             frmasc.btnActualizar.setVisible(false);
-             frmasc.btnEditar.setVisible(true);
+            this.Limpiar();
+            this.Listar(frmasc.TablaM);
+            frmasc.btnActualizar.setVisible(false);
+            frmasc.btnEditar.setVisible(true);
         }
-        
-        if(e.getSource().equals(frmasc.btnEliminar)){
-            int fila=frmasc.TablaM.getSelectedRow();
-            if(fila==-1){
-                 JOptionPane.showMessageDialog(frmasc, "DEBES SELECCIONAR UN REGISTRO");
-            }else{
-                int opc= JOptionPane.showConfirmDialog(frmasc, "¿DESEAS ELIMINAR EL REGISTRO ACTUAL?");
-                if(opc==0){
-                    int cod =Integer.parseInt((String) frmasc.TablaM.getValueAt(fila, 0));
-                    mas=new Mascota();
+
+        if (e.getSource().equals(frmasc.btnEliminar)) {
+            int fila = frmasc.TablaM.getSelectedRow();
+            if (fila == -1) {
+                JOptionPane.showMessageDialog(frmasc, "DEBES SELECCIONAR UN REGISTRO");
+            } else {
+                int opc = JOptionPane.showConfirmDialog(frmasc, "¿DESEAS ELIMINAR EL REGISTRO ACTUAL?");
+                if (opc == 0) {
+                    int cod = Integer.parseInt((String) frmasc.TablaM.getValueAt(fila, 0));
+                    mas = new Mascota();
                     mas.setIdCliente(cod);
-                    int fi=MascotasDAO.eliminar(mas);
-                    if(fi==1){
+                    int fi = MascotasDAO.eliminar(mas);
+                    if (fi == 1) {
                         JOptionPane.showMessageDialog(frmasc, "REGISTRO ELIMINADO");
-                         this.Limpiar();
-                    }else{
+                        this.Limpiar();
+                    } else {
                         JOptionPane.showMessageDialog(frmasc, "NO ES POSIBLE ELIMINAR REGISTRO");
                     }
                 }

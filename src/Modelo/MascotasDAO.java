@@ -22,8 +22,7 @@ public class MascotasDAO {
 
 //    public static final String EDITAR = "UPDATE Mascota "
 //            + "SET id_Cliente=?,Raza=?,Nombre=?,Edad=?,Observacion=? WHERE Tipo_mascota=?";
-    public static final String EDITAR = "UPDATE Mascota SET Tipo_mascota=?,\n"
-            + "Raza=?,Nombre=?,Edad=?,Observacion=? WHERE id_Cliente=?";
+    public static final String EDITAR = "UPDATE Mascota SET Tipo_mascota=?, Raza=?,Nombre=?,Edad=?,Observacion=? WHERE id_Cliente=?";
 
     public static final String ELIMINAR = "DELETE FROM Mascota WHERE id_Mascota=?";
 

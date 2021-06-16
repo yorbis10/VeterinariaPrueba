@@ -43,7 +43,7 @@ public class Mascota {
         this.Edad = Edad;
         this.Observacion = Observacion;
     }
-
+// editar
     public Mascota(String TipoMascota, String Raza, String Nombre, String Edad, String Observacion, int idCliente) {
        this.TipoMascota = TipoMascota;
         this.Raza = Raza;
