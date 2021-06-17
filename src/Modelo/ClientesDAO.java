@@ -13,7 +13,7 @@ public class ClientesDAO {
     public static final String LISTAR = "select Documento,Tipo_Documento,Nombre,Apellidos,Telefono,Direccion,Ciudad,Corrreo,Observacion  from Cliente";
     public static final String INSERTAR = "insert into Cliente values (?,?,?,?,?,?,?,?,?)";
     public static final String EDITAR = "update Cliente set  Documento=?,Tipo_Documento=? ,Nombre=?, Apellidos=?, Telefono=?, Direccion=?, Ciudad=?, Corrreo=?, Observacion=? where Documento =?";
-    public static final String ELIMINAR = " delete Cliente where Id_Cliente =?";
+    public static final String ELIMINAR = " delete Cliente where Documento =?";
 
     //guarda la conexion a la bd
     Connection con = null;
